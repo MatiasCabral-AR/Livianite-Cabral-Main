@@ -1,0 +1,23 @@
+@font-face {
+    font-family: vladimir;
+    src: url(../fonts/VLADIMIR.TTF);
+}
+
+body{
+    background-color: #E7D7FE;
+}
+
+.navigationBar{
+    background-color: #dac2fe;
+}
+
+.navbar-brand{
+    font-family: vladimir;
+    font-size: 3rem;
+}
+
+.subMenu{
+    border: none;
+    border-radius: none;
+    background-color: #dac2fe;
+}
