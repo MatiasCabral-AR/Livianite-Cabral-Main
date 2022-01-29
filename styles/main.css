@@ -28,6 +28,12 @@ body{
     background-color: #dac2fe;
 }
 
+/* Retoque Carrusel */
+
+.carrusel{
+    margin-top: 10rem;
+}
+
 /* Diseño de Grid de Productos */
 
 h3.h3{
@@ -200,5 +206,6 @@ h3.h3{
 
 /* Media Queries */
 
-@media only screen and (max-width:990px){.product-grid{margin-bottom:30px}
+@media only screen and (max-width:990px){
+    .product-grid{margin-bottom:30px}
 }
