@@ -28,6 +28,10 @@ body{
     background-color: #dac2fe;
 }
 
+.menuLink{
+    width: 10rem;
+}
+
 /* Retoque Carrusel */
 
 .carrusel{
@@ -208,4 +212,7 @@ h3.h3{
 
 @media only screen and (max-width:990px){
     .product-grid{margin-bottom:30px}
+    .menuLink{
+        width: 100%;
+    }
 }

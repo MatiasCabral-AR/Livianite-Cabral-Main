@@ -17,7 +17,7 @@
 <body>
     <header>
       <!-- Diseño de Barra de Navegacion -->
-        <nav class="navbar navbar-expand-lg navbar-light navigationBar mt-2">
+        <nav class="navbar navbar-expand-lg navbar-light navigationBar mt-2 fixed-top">
             <div class="container-fluid">
               <a class="navbar-brand justify-content ms-2 me-3" href="index.html">Livianite</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" 
@@ -26,28 +26,27 @@
               </button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-2 me-auto mb-2 mb-lg-0">
-                  <li class="nav-item me-3">
+                  <li class="nav-item menuLink me-3">
                     <a class="nav-link text-center text-dark" aria-current="page" href="#">Inicio</a>
                   </li>
-                  <li class="nav-item me-3">
+                  <li class="nav-item menuLink me-3">
                     <a class="nav-link text-center text-dark" href="#">Quienes Somos</a>
                   </li>
-                  <li class="nav-item dropdown me-3">
+                  <li class="nav-item menuLink dropdown me-3">
                     <a class="nav-link dropdown-toggle text-center text-dark" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       Shop
                     </a>
                     <ul class="dropdown-menu subMenu shadow p-3 mb-5" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="#">Carrito</a></li>
-                        <li><a class="dropdown-item" href="#">Diseños</a></li>
-                        <li><a class="dropdown-item" href="#">Ofertas y Stock Inmediato</a></li>
-                        <li><a class="dropdown-item" href="#">Informacion</a></li>
+                        <li><a class="dropdown-item text-center" href="#">Carrito</a></li>
+                        <li><a class="dropdown-item text-center" href="#">Diseños</a></li>
+                        <li><a class="dropdown-item text-center" href="#">Ofertas y Stock Inmediato</a></li>
+                        <li><a class="dropdown-item text-center" href="#">Informacion</a></li>
                     </ul>
                   </li>
+                  <li class="nav-item menuLink me-3">
+                    <a class="nav-link text-center text-dark" href="#footer">Contacto</a>
+                  </li>
                 </ul>
-                <form class="d-flex">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-dark bg-white disabled" type="submit">Search</button>
-                </form>
               </div>
             </div>
         </nav>
@@ -200,7 +199,7 @@
       </div>
     </div>
     <!-- Diseño de Footer -->
-    <div class="container">
+    <div class="container" id="footer">
       <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
         <div class="col-md-4 d-flex align-items-center">
           <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
