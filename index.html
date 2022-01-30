@@ -10,6 +10,10 @@
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Montserrat Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;500&display=swap" rel="stylesheet">
     <!-- Links CSS -->
     <link rel="stylesheet" href="styles/main.css">
     <title>Inicio - Livianite</title>
@@ -37,10 +41,10 @@
                       Shop
                     </a>
                     <ul class="dropdown-menu subMenu shadow p-3 mb-5" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item text-center" href="#">Carrito</a></li>
-                        <li><a class="dropdown-item text-center" href="#">Diseños</a></li>
-                        <li><a class="dropdown-item text-center" href="#">Ofertas y Stock Inmediato</a></li>
-                        <li><a class="dropdown-item text-center" href="#">Informacion</a></li>
+                        <li><a class="dropdown-item submenu-link text-center" href="#">Carrito</a></li>
+                        <li><a class="dropdown-item submenu-link text-center" href="#">Diseños</a></li>
+                        <li><a class="dropdown-item submenu-link text-center" href="#">Ofertas y Stock Inmediato</a></li>
+                        <li><a class="dropdown-item submenu-link text-center" href="#">Informacion</a></li>
                     </ul>
                   </li>
                   <li class="nav-item menuLink me-3">
@@ -53,7 +57,7 @@
     </header>
     <!-- Diseño de Carousel de ofertas-->
     <section>
-      <article class="container d-flex align-items-center carrusel">
+      <article class="container d-flex align-items-center presentation">
         <div class="container d-flex flex-column justify-content-start">
           <p>Ropa interior hecha a mano 👙</p>
           <p>Para cuerpos reales 🤸🌈</p> 
@@ -99,124 +103,215 @@
         </div>
       </article>
     </section>
-    <!-- Diseño de Grid de Productos-->
-    <div class="container">
-      <h3 class="h3">Stock Inmediato</h3>
-      <div class="row">
-        <div class="col-md-3 col-sm-6">
+    <!-- Diseño de Grid de Productos (Stock Inmediato) -->
+    <section class="immediate-stock">
+      <div class="container">
+        <p class="grid-title text-center m-3"><a class="anchor-title" href="#">Stock Inmediato</a></p>
+        <div class="row">
+          <div class="col-md-3 col-sm-6">
+                <div class="product-grid">
+                    <div class="product-image">
+                        <a href="#">
+                            <img class="pic-1" src="img/producto.png">
+                            <img class="pic-2" src="img/producto2.png">
+                        </a>
+                        <ul class="social">
+                            <li><a href="" data-tip="Ver Producto"><i class="fa fa-search"></i></a></li>
+                            <li><a href="" data-tip="Añadir a Carrito"><i class="fa fa-shopping-cart"></i></a></li>
+                        </ul>
+                        <span class="product-new-label">Sale</span>
+                        <span class="product-discount-label">20%</span>
+                    </div>
+                    <div class="product-content">
+                        <h3 class="title"><a href="#">Producto 1</a></h3>
+                        <div class="price">$ XXXX
+                            <span>$ XXXX</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
               <div class="product-grid">
-                  <div class="product-image">
-                      <a href="#">
-                          <img class="pic-1" src="img/producto.png">
-                          <img class="pic-2" src="img/producto2.png">
-                      </a>
-                      <ul class="social">
-                          <li><a href="" data-tip="Ver Producto"><i class="fa fa-search"></i></a></li>
-                          <li><a href="" data-tip="Añadir a Carrito"><i class="fa fa-shopping-cart"></i></a></li>
-                      </ul>
-                      <span class="product-new-label">Sale</span>
-                      <span class="product-discount-label">20%</span>
-                  </div>
-                  <div class="product-content">
-                      <h3 class="title"><a href="#">Producto 1</a></h3>
-                      <div class="price">$ XXXX
-                          <span>$ XXXX</span>
-                      </div>
-                      <a class="add-to-cart" href="">Añadir a carrito</a>
-                  </div>
-              </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="product-grid">
-              <div class="product-image">
-                  <a href="#">
-                      <img class="pic-1" src="img/producto.png">
-                      <img class="pic-2" src="img/producto2.png">
-                  </a>
-                  <ul class="social">
-                      <li><a href="" data-tip="Ver Producto"><i class="fa fa-search"></i></a></li>
-                      <li><a href="" data-tip="Añadir a Carrito"><i class="fa fa-shopping-cart"></i></a></li>
-                  </ul>
-                  <span class="product-new-label d-none">Sale</span>
-                  <span class="product-discount-label d-none">20%</span>
-              </div>
-              <div class="product-content">
-                  <h3 class="title"><a href="#">Producto 2</a></h3>
-                  <div class="price">
-                    $ XXXX
-                  </div>
-                  <a class="add-to-cart" href="">Añadir a carrito</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="product-grid">
-              <div class="product-image">
-                  <a href="#">
-                      <img class="pic-1" src="img/producto.png">
-                      <img class="pic-2" src="img/producto2.png">
-                  </a>
-                  <ul class="social">
-                      <li><a href="" data-tip="Ver Producto"><i class="fa fa-search"></i></a></li>
-                      <li><a href="" data-tip="Añadir a Carrito"><i class="fa fa-shopping-cart"></i></a></li>
-                  </ul>
-                  <span class="product-new-label d-none">Sale</span>
-                  <span class="product-discount-label d-none">20%</span>
-              </div>
-              <div class="product-content">
-                  <h3 class="title"><a href="#">Producto 3</a></h3>
-                  <div class="price">
-                    $ XXXX
-                  </div>
-                  <a class="add-to-cart" href="">Añadir a carrito</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="product-grid">
-              <div class="product-image">
-                  <a href="#">
-                      <img class="pic-1" src="img/producto.png">
-                      <img class="pic-2" src="img/producto2.png">
-                  </a>
-                  <ul class="social">
-                      <li><a href="" data-tip="Ver Producto"><i class="fa fa-search"></i></a></li>
-                      <li><a href="" data-tip="Añadir a Carrito"><i class="fa fa-shopping-cart"></i></a></li>
-                  </ul>
-                  <span class="product-new-label">Sale</span>
-                  <span class="product-discount-label">35%</span>
-              </div>
-              <div class="product-content">
-                  <h3 class="title"><a href="#">Producto 4</a></h3>
-                  <div class="price">
+                <div class="product-image">
+                    <a href="#">
+                        <img class="pic-1" src="img/producto.png">
+                        <img class="pic-2" src="img/producto2.png">
+                    </a>
+                    <ul class="social">
+                        <li><a href="" data-tip="Ver Producto"><i class="fa fa-search"></i></a></li>
+                        <li><a href="" data-tip="Añadir a Carrito"><i class="fa fa-shopping-cart"></i></a></li>
+                    </ul>
+                    <span class="product-new-label d-none">Sale</span>
+                    <span class="product-discount-label d-none">20%</span>
+                </div>
+                <div class="product-content">
+                    <h3 class="title"><a href="#">Producto 2</a></h3>
+                    <div class="price">
                       $ XXXX
-                      <span>$ XXXX</span>
-                  </div>
-                  <a class="add-to-cart" href="">Añadir a carrito</a>
+                    </div>
+                </div>
               </div>
             </div>
-          </div>
+            <div class="col-md-3 col-sm-6">
+              <div class="product-grid">
+                <div class="product-image">
+                    <a href="#">
+                        <img class="pic-1" src="img/producto.png">
+                        <img class="pic-2" src="img/producto2.png">
+                    </a>
+                    <ul class="social">
+                        <li><a href="" data-tip="Ver Producto"><i class="fa fa-search"></i></a></li>
+                        <li><a href="" data-tip="Añadir a Carrito"><i class="fa fa-shopping-cart"></i></a></li>
+                    </ul>
+                    <span class="product-new-label d-none">Sale</span>
+                    <span class="product-discount-label d-none">20%</span>
+                </div>
+                <div class="product-content">
+                    <h3 class="title"><a href="#">Producto 3</a></h3>
+                    <div class="price">
+                      $ XXXX
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <div class="product-grid">
+                <div class="product-image">
+                    <a href="#">
+                        <img class="pic-1" src="img/producto.png">
+                        <img class="pic-2" src="img/producto2.png">
+                    </a>
+                    <ul class="social">
+                        <li><a href="" data-tip="Ver Producto"><i class="fa fa-search"></i></a></li>
+                        <li><a href="" data-tip="Añadir a Carrito"><i class="fa fa-shopping-cart"></i></a></li>
+                    </ul>
+                    <span class="product-new-label">Sale</span>
+                    <span class="product-discount-label">35%</span>
+                </div>
+                <div class="product-content">
+                    <h3 class="title"><a href="#">Producto 4</a></h3>
+                    <div class="price">
+                        $ XXXX
+                        <span>$ XXXX</span>
+                    </div>
+                </div>
+              </div>
+            </div>
+        </div>
       </div>
-    </div>
+    </section>
+    <!-- Diseño de Grid de Productos (Diseños) -->
+    <section class="popular-products">
+      <div class="container">
+        <p class="grid-title text-center m-3">Diseños mas vendidos</p>
+        <div class="row">
+          <div class="col-md-3 col-sm-6">
+                <div class="product-grid">
+                    <div class="product-image">
+                        <a href="#">
+                            <img class="pic-1" src="img/producto.png">
+                            <img class="pic-2" src="img/producto2.png">
+                        </a>
+                        <ul class="social">
+                            <li><a href="" data-tip="Ver Producto"><i class="fa fa-search"></i></a></li>
+                            <li><a href="" data-tip="Añadir a Carrito"><i class="fa fa-shopping-cart"></i></a></li>
+                        </ul>
+                        <span class="product-new-label ">Sale</span>
+                        <span class="product-discount-label">20%</span>
+                    </div>
+                    <div class="product-content">
+                        <h3 class="title"><a href="#">Producto 1</a></h3>
+                        <div class="price">$ XXXX
+                            <span>$ XXXX</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <div class="product-grid">
+                <div class="product-image">
+                    <a href="#">
+                        <img class="pic-1" src="img/producto.png">
+                        <img class="pic-2" src="img/producto2.png">
+                    </a>
+                    <ul class="social">
+                        <li><a href="" data-tip="Ver Producto"><i class="fa fa-search"></i></a></li>
+                        <li><a href="" data-tip="Añadir a Carrito"><i class="fa fa-shopping-cart"></i></a></li>
+                    </ul>
+                    <span class="product-new-label d-none">Sale</span>
+                    <span class="product-discount-label d-none">20%</span>
+                </div>
+                <div class="product-content">
+                    <h3 class="title"><a href="#">Producto 2</a></h3>
+                    <div class="price">
+                      $ XXXX
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <div class="product-grid">
+                <div class="product-image">
+                    <a href="#">
+                        <img class="pic-1" src="img/producto.png">
+                        <img class="pic-2" src="img/producto2.png">
+                    </a>
+                    <ul class="social">
+                        <li><a href="" data-tip="Ver Producto"><i class="fa fa-search"></i></a></li>
+                        <li><a href="" data-tip="Añadir a Carrito"><i class="fa fa-shopping-cart"></i></a></li>
+                    </ul>
+                    <span class="product-new-label d-none">Sale</span>
+                    <span class="product-discount-label d-none">20%</span>
+                </div>
+                <div class="product-content">
+                    <h3 class="title"><a href="#">Producto 3</a></h3>
+                    <div class="price">
+                      $ XXXX
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <div class="product-grid">
+                <div class="product-image">
+                    <a href="#">
+                        <img class="pic-1" src="img/producto.png">
+                        <img class="pic-2" src="img/producto2.png">
+                    </a>
+                    <ul class="social">
+                        <li><a href="" data-tip="Ver Producto"><i class="fa fa-search"></i></a></li>
+                        <li><a href="" data-tip="Añadir a Carrito"><i class="fa fa-shopping-cart"></i></a></li>
+                    </ul>
+                    <span class="product-new-label">Sale</span>
+                    <span class="product-discount-label">35%</span>
+                </div>
+                <div class="product-content">
+                    <h3 class="title"><a href="#">Producto 4</a></h3>
+                    <div class="price">
+                        $ XXXX
+                        <span>$ XXXX</span>
+                    </div>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </section>
     <!-- Diseño de Footer -->
-    <div class="container" id="footer">
-      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-        <div class="col-md-4 d-flex align-items-center">
-          <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
-            <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
-          </a>
+    <div class="container-fluid" id="footer">
+      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4">
+        <div class="d-flex align-items-center">
           <span class="text-muted">&copy; Matias Cabral, 2022</span>
         </div>
-    
         <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-          <li class="ms-3"><h5>Contacto Livianite</h5></li>
-          <li class="ms-3"><a class="text-muted" href="#"><img src="img/whatsapp.png" alt=""></a></li>
-          <li class="ms-3"><a class="text-muted" href="#"><img src="img/facebook.png" alt=""></a></li>
-          <li class="ms-3"><a class="text-muted" href="#"><img src="img/instagram.png" alt=""></a></li>
+          <li class="ms-3"><span class="text-muted">Contacto Livianite</span></li>
+          <li class="ms-3"><a href="#"><img src="img/whatsapp.png" alt=""></a></li>
+          <li class="ms-3"><a href="#"><img src="img/facebook.png" alt=""></a></li>
+          <li class="ms-3"><a href="#"><img src="img/instagram.png" alt=""></a></li>
         </ul>
       </footer>
     </div>
-    <!-- Agregando Scripts -->
+    <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" 
     crossorigin="anonymous"></script>
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>

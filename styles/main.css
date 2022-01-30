@@ -3,14 +3,18 @@
     src: url(../fonts/VLADIMIR.TTF);
 }
 
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+
 body{
-    background-color: #E7D7FE;
+    background-color: #dac2fe;
 }
 
 /* Retoques en navbar */
 
 .navigationBar{
-    background-color: #dac2fe;
+    background-color: #CEAFFE;
 }
 
 .nav-link:hover{
@@ -25,26 +29,32 @@ body{
 .subMenu{
     border: none;
     border-radius: none;
-    background-color: #dac2fe;
+    background-color: #CEAFFE;
 }
 
 .menuLink{
     width: 10rem;
 }
 
-/* Retoque Carrusel */
+.submenu-link:hover{
+    background-color: #b686fd;
+}
 
-.carrusel{
+/* Retoque Presentacion */
+
+.presentation{
     margin-top: 10rem;
+    margin-bottom: 8rem;
 }
 
 /* Diseño de Grid de Productos */
 
-h3.h3{
-    text-align:center;
-    margin:1em;
-    font-size:1.7em;
+.anchor-title, .grid-title{
+    text-decoration: none;
+    font-size:3rem;
+    color: black;
 }
+
 .product-grid{
     text-align:center;
     padding:0 0 72px;
@@ -206,6 +216,25 @@ h3.h3{
     color:#000;
     font-size:13px;
     font-weight:600
+}
+
+/* Detalles esteticos Background index.html */
+
+.immediate-stock{
+    margin-bottom: 0;
+    background-color: #CEAFFE;
+}
+
+.popular-products{
+    margin-top: 0;
+    background-color: #b686fd;
+}
+
+/* Cambio tamaño de secciones (Diseños mas vendidos, Stock Inmediato) */
+
+.immediate-stock, .popular-products{
+    padding-bottom: 2rem;
+    padding-top: 1rem;
 }
 
 /* Media Queries */
