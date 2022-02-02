@@ -3,6 +3,7 @@
     src: url(../fonts/VLADIMIR.TTF);
 }
 
+/* Ppropiedades generales a todos los HTML */
 *{
     font-family: 'Montserrat', sans-serif;
 }
@@ -10,6 +11,8 @@
 body{
     background-color: #dac2fe;
 }
+
+/* Diseño de elementos reutilizables */
 
 /* Retoques en navbar */
 
@@ -38,13 +41,6 @@ body{
 
 .submenu-link:hover{
     background-color: #b686fd;
-}
-
-/* Retoque Presentacion */
-
-.upper-side{
-    margin-top: 10rem;
-    margin-bottom: 8rem;
 }
 
 /* Diseño de Grid de Productos */
@@ -218,6 +214,15 @@ body{
     font-weight:600
 }
 
+/* Inicio index.html */
+
+/* Retoque Presentacion */
+
+.upper-side{
+    margin-top: 10rem;
+    margin-bottom: 8rem;
+}
+
 /* Detalles esteticos Background index.html */
 
 .immediate-stock{
@@ -235,6 +240,14 @@ body{
 .immediate-stock, .popular-products{
     padding-bottom: 2rem;
     padding-top: 1rem;
+}
+
+/* Fin index.html */
+
+/* Inicio quienes-somos.html */
+
+.body{
+    margin-top: 10rem;
 }
 
 /* Media Queries */
