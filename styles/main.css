@@ -14,6 +14,14 @@ body{
 
 /* Diseño de elementos reutilizables */
 
+/* Titulo de los HTML */
+
+.page-title{
+    font-family: vladimir;
+    font-size: 6rem;
+    font-weight: 300;
+}
+
 /* Retoques en navbar */
 
 .navigationBar{
@@ -214,6 +222,16 @@ body{
     font-weight:600
 }
 
+/* Inicio retoques footer */
+
+.fixed-footer{
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+/* Fin Diseño de Objetos Reutilizables */ 
+
+
+
 /* Inicio index.html */
 
 /* Retoque Presentacion */
@@ -237,17 +255,33 @@ body{
 
 /* Cambio tamaño de secciones (Diseños mas vendidos, Stock Inmediato) */
 
-.immediate-stock, .popular-products{
+.product-container{
     padding-bottom: 2rem;
     padding-top: 1rem;
 }
 
 /* Fin index.html */
 
+
+
 /* Inicio quienes-somos.html */
 
 .body{
     margin-top: 10rem;
+}
+
+.description{
+    background-color: #CEAFFE;
+    border-radius: 2rem;
+    padding-top: .5rem;
+}
+
+/* Fin quienes-somos.html */
+
+/* Retoques disenos.html */
+
+.design-container{
+    background-color: #CEAFFE;
 }
 
 /* Media Queries */
@@ -269,5 +303,11 @@ body{
     }
     .presentation p{
         text-align: center;
+    }
+    .description-img{
+        display: none;
+    }
+    .description-title{
+        font-size: 2rem;
     }
 }
