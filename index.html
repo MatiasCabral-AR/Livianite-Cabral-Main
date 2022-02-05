@@ -56,8 +56,8 @@
         </nav>
     </header>
     <!-- Diseño de Carousel de ofertas y Presentacion de la marca-->
-    <section>
-      <article class="container d-flex align-items-center upper-side">
+    <section class="upper-side">
+      <article class="container d-flex align-items-center">
         <div class="container d-flex flex-column justify-content-start presentation">
           <p>Ropa interior hecha a mano 👙</p>
           <p>Para cuerpos reales 🤸🌈</p> 
@@ -104,102 +104,104 @@
       </article>
     </section>
     <!-- Diseño de Grid de Productos (Stock Inmediato) -->
-    <section class="product-container immediate-stock">
-      <div class="container">
-        <p class="grid-title text-center m-3"><a class="anchor-title" href="pages/shop/sale-stock.html">Stock Inmediato</a></p>
-        <div class="row">
-          <div class="col-md-3 col-sm-6">
+    <section>
+      <article class="product-container immediate-stock">
+        <div class="container">
+          <p class="grid-title text-center m-3"><a class="anchor-title" href="pages/shop/sale-stock.html">Stock Inmediato</a></p>
+          <div class="row">
+            <div class="col-md-3 col-sm-6">
+                  <div class="product-grid">
+                      <div class="product-image">
+                          <a href="javascript:void(0)">
+                              <img class="pic-1" src="img/producto.png">
+                              <img class="pic-2" src="img/producto2.png">
+                          </a>
+                          <ul class="social">
+                              <li><a href="" data-tip="Ver Producto"><i class="fa fa-search"></i></a></li>
+                              <li><a href="" data-tip="Añadir a Carrito"><i class="fa fa-shopping-cart"></i></a></li>
+                          </ul>
+                          <span class="product-new-label">Sale</span>
+                          <span class="product-discount-label">20%</span>
+                      </div>
+                      <div class="product-content">
+                          <h3 class="title"><a href="#">Producto 1</a></h3>
+                          <div class="price">$ XXXX
+                              <span>$ XXXX</span>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-3 col-sm-6">
                 <div class="product-grid">
-                    <div class="product-image">
-                        <a href="javascript:void(0)">
-                            <img class="pic-1" src="img/producto.png">
-                            <img class="pic-2" src="img/producto2.png">
-                        </a>
-                        <ul class="social">
-                            <li><a href="" data-tip="Ver Producto"><i class="fa fa-search"></i></a></li>
-                            <li><a href="" data-tip="Añadir a Carrito"><i class="fa fa-shopping-cart"></i></a></li>
-                        </ul>
-                        <span class="product-new-label">Sale</span>
-                        <span class="product-discount-label">20%</span>
-                    </div>
-                    <div class="product-content">
-                        <h3 class="title"><a href="#">Producto 1</a></h3>
-                        <div class="price">$ XXXX
-                            <span>$ XXXX</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6">
-              <div class="product-grid">
-                <div class="product-image">
-                    <a href="javascript:void(0)">
-                        <img class="pic-1" src="img/producto.png">
-                        <img class="pic-2" src="img/producto2.png">
-                    </a>
-                    <ul class="social">
-                        <li><a href="" data-tip="Ver Producto"><i class="fa fa-search"></i></a></li>
-                        <li><a href="" data-tip="Añadir a Carrito"><i class="fa fa-shopping-cart"></i></a></li>
-                    </ul>
-                    <span class="product-new-label d-none">Sale</span>
-                    <span class="product-discount-label d-none">20%</span>
-                </div>
-                <div class="product-content">
-                    <h3 class="title"><a href="#">Producto 2</a></h3>
-                    <div class="price">
-                      $ XXXX
-                    </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3 col-sm-6">
-              <div class="product-grid">
-                <div class="product-image">
-                    <a href="javascript:void(0)">
-                        <img class="pic-1" src="img/producto.png">
-                        <img class="pic-2" src="img/producto2.png">
-                    </a>
-                    <ul class="social">
-                        <li><a href="" data-tip="Ver Producto"><i class="fa fa-search"></i></a></li>
-                        <li><a href="" data-tip="Añadir a Carrito"><i class="fa fa-shopping-cart"></i></a></li>
-                    </ul>
-                    <span class="product-new-label d-none">Sale</span>
-                    <span class="product-discount-label d-none">20%</span>
-                </div>
-                <div class="product-content">
-                    <h3 class="title"><a href="#">Producto 3</a></h3>
-                    <div class="price">
-                      $ XXXX
-                      <span class="d-none">$ XXXX</span>
-                    </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3 col-sm-6">
-              <div class="product-grid">
-                <div class="product-image">
-                    <a href="javascript:void(0)">
-                        <img class="pic-1" src="img/producto.png">
-                        <img class="pic-2" src="img/producto2.png">
-                    </a>
-                    <ul class="social">
-                        <li><a href="" data-tip="Ver Producto"><i class="fa fa-search"></i></a></li>
-                        <li><a href="" data-tip="Añadir a Carrito"><i class="fa fa-shopping-cart"></i></a></li>
-                    </ul>
-                    <span class="product-new-label">Sale</span>
-                    <span class="product-discount-label">35%</span>
-                </div>
-                <div class="product-content">
-                    <h3 class="title"><a href="#">Producto 4</a></h3>
-                    <div class="price">
+                  <div class="product-image">
+                      <a href="javascript:void(0)">
+                          <img class="pic-1" src="img/producto.png">
+                          <img class="pic-2" src="img/producto2.png">
+                      </a>
+                      <ul class="social">
+                          <li><a href="" data-tip="Ver Producto"><i class="fa fa-search"></i></a></li>
+                          <li><a href="" data-tip="Añadir a Carrito"><i class="fa fa-shopping-cart"></i></a></li>
+                      </ul>
+                      <span class="product-new-label d-none">Sale</span>
+                      <span class="product-discount-label d-none">20%</span>
+                  </div>
+                  <div class="product-content">
+                      <h3 class="title"><a href="#">Producto 2</a></h3>
+                      <div class="price">
                         $ XXXX
-                        <span>$ XXXX</span>
-                    </div>
+                      </div>
+                  </div>
                 </div>
               </div>
-            </div>
+              <div class="col-md-3 col-sm-6">
+                <div class="product-grid">
+                  <div class="product-image">
+                      <a href="javascript:void(0)">
+                          <img class="pic-1" src="img/producto.png">
+                          <img class="pic-2" src="img/producto2.png">
+                      </a>
+                      <ul class="social">
+                          <li><a href="" data-tip="Ver Producto"><i class="fa fa-search"></i></a></li>
+                          <li><a href="" data-tip="Añadir a Carrito"><i class="fa fa-shopping-cart"></i></a></li>
+                      </ul>
+                      <span class="product-new-label d-none">Sale</span>
+                      <span class="product-discount-label d-none">20%</span>
+                  </div>
+                  <div class="product-content">
+                      <h3 class="title"><a href="#">Producto 3</a></h3>
+                      <div class="price">
+                        $ XXXX
+                        <span class="d-none">$ XXXX</span>
+                      </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                <div class="product-grid">
+                  <div class="product-image">
+                      <a href="javascript:void(0)">
+                          <img class="pic-1" src="img/producto.png">
+                          <img class="pic-2" src="img/producto2.png">
+                      </a>
+                      <ul class="social">
+                          <li><a href="" data-tip="Ver Producto"><i class="fa fa-search"></i></a></li>
+                          <li><a href="" data-tip="Añadir a Carrito"><i class="fa fa-shopping-cart"></i></a></li>
+                      </ul>
+                      <span class="product-new-label">Sale</span>
+                      <span class="product-discount-label">35%</span>
+                  </div>
+                  <div class="product-content">
+                      <h3 class="title"><a href="#">Producto 4</a></h3>
+                      <div class="price">
+                          $ XXXX
+                          <span>$ XXXX</span>
+                      </div>
+                  </div>
+                </div>
+              </div>
+          </div>
         </div>
-      </div>
+      </article>
     </section>
     <!-- Diseño de Grid de Productos (Diseños) -->
     <section class="product-container popular-products">
