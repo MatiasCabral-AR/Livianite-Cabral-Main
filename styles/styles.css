@@ -77,10 +77,10 @@ section {
             section .product-container .container .row div .product-grid :hover .social li a :hover {
               color: #fff;
               background-color: #b686fd; }
-              section .product-container .container .row div .product-grid :hover .social li a :hover :after {
-                opacity: 1; }
-              section .product-container .container .row div .product-grid :hover .social li a :hover :before {
-                opacity: 1; }
+            section .product-container .container .row div .product-grid :hover .social li a :hover:after {
+              opacity: 1; }
+            section .product-container .container .row div .product-grid :hover .social li a :hover:before {
+              opacity: 1; }
             section .product-container .container .row div .product-grid :hover .social li a :after {
               content: attr(data-tip);
               color: #fff;

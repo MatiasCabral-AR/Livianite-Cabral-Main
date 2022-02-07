@@ -90,15 +90,15 @@ section{
                                 display: inline-block;
                                 a{
                                     :hover{
-                                        :after{
-                                            opacity: 1;
-                                        }
-                                        :before{
-                                            opacity: 1;
-                                        }
                                         color:#fff;
                                         background-color:#b686fd;
                                     }
+                                    :hover:after{
+                                            opacity: 1;
+                                    }
+                                    :hover:before{
+                                            opacity: 1;
+                                    } 
                                     :after{
                                         content:attr(data-tip);
                                         color:#fff;

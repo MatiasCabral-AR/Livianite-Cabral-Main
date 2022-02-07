@@ -296,6 +296,11 @@ body{
 
 /* Fin diseños.html */
 
+/* Inicio product.html */
+
+.product-card{
+    margin-top: 10rem;
+}
 
 
 /* Media Queries */
