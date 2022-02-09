@@ -1,7 +1,51 @@
+/* General */
+
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+body{
+    background-color: #dac2fe;
+    .body{
+        margin-top: 10rem;
+        /* quienes-somos.html */
+        .description{
+            .row{
+                div{
+                    .description-title{
+                        font-family: vladimir;
+                        font-size: 3rem;
+                    }
+                }
+            }
+            background-color: #CEAFFE;
+            border-radius: 2rem;
+            padding-top: .5rem;
+        }
+    }
+    .upper-side{
+        /* quienes-somos.html */
+        .page-title{
+            font-family: vladimir;
+            font-size: 4rem;
+        }
+        margin-top: 10rem;
+        margin-bottom: 8rem;
+    }
+    div{
+        footer{
+            .fixed-footer{
+                background-color: rgba(255, 255, 255, 0.5);
+            }
+        }
+    }
+}
+
 /* Navbar */
 
 header{
-    .navigationBar{
+    .navbar{
         background-color: #CEAFFE;
         .container-fluid{
             .navbar-brand{
@@ -16,9 +60,9 @@ header{
                 }
             }
             .navbar-nav{
-                .menu-link{
+                .menuLink{
                     width: 10rem;
-                    .subMenu{
+                    .dropdown-menu{
                         .submenu-link:hover{
                             background-color: #b686fd;
                         }
@@ -32,18 +76,11 @@ header{
     }
 }
 
-/* Espaciado del inicio de pagina respecto a Navbar */
-
-.upper-side{
-    margin-top: 10rem;
-    margin-bottom: 8rem;
-}
-
 /* Product Grid */
 
 section{
-    /* index-html */
     .immediate-stock{
+        /* index-html */
         margin-bottom: 0;
         background-color: #CEAFFE;
     }
@@ -51,14 +88,11 @@ section{
         margin-top: 0;
         background-color: #b686fd;
     }
-    /* ---------- */
-
-    /* disenos.html */
     .design-container{
+        
+    /* disenos.html */
         background-color: #CEAFFE;
     }
-    /* ---------- */
-
     /* General Content */
     .product-container{
         padding-bottom: 2rem;
@@ -77,51 +111,26 @@ section{
             .row{
                 div{
                     .product-grid{
-                        :hover .pic-1, .pic-2{
+                        &:hover .pic-2{
                             opacity: 1;
                         }
-                        :hover .title a{
+                        &:hover .title a{
                             color: #000;
                         }
-                        :hover .social{
+                        &:hover .social{
                             opacity:1;
                             top:90%;
                             li{
                                 display: inline-block;
                                 a{
-                                    :hover{
+                                    &:hover{
                                         color:#fff;
                                         background-color:#b686fd;
                                     }
-                                    :hover:after{
-                                            opacity: 1;
-                                    }
-                                    :hover:before{
+                                    &:hover:before{
                                             opacity: 1;
                                     } 
-                                    :after{
-                                        content:attr(data-tip);
-                                        color:#fff;
-                                        background-color:#000;
-                                        font-size:12px;
-                                        letter-spacing:1px;
-                                        line-height:20px;
-                                        padding:1px 5px;
-                                        white-space:nowrap;
-                                        opacity:0;
-                                        transform:translateX(-50%);
-                                        position:absolute;
-                                        left:50%;
-                                        top:-30px;
-                                        content:'';
-                                        height:15px;
-                                        width:15px;
-                                        border-radius:0;
-                                        transform:translateX(-50%) rotate(45deg);
-                                        top:-20px;
-                                        z-index:-1
-                                    }
-                                    :before{
+                                    &:before{
                                         content:attr(data-tip);
                                         color:#fff;
                                         background-color:#000;
@@ -146,7 +155,6 @@ section{
                                     margin:0 2px;
                                     display:block;
                                     position:relative;
-                                    transition:all .3s ease-in-out
                                 }
                             }
                         }
@@ -252,7 +260,7 @@ section{
                             margin:0 0 10px;
                             transition:all .3s ease 0s;
                             a{
-                                :hover{
+                                &:hover{
                                     color: #000;
                                 }
                                 color: #777;
@@ -265,19 +273,45 @@ section{
     }
 }
 
-/* quienes-somos.html */ 
 
-.body{
-    margin-top: 10rem;
-    .description{
-        background-color: #CEAFFE;
-        border-radius: 2rem;
-        padding-top: .5rem;
+
+
+/* Fonts */
+
+@font-face {
+    font-family: vladimir;
+    src: url(../fonts/VLADIMIR.TTF);
+}
+
+/* Media Queries */
+
+@media only screen and (max-width:990px){
+    .product-grid{
+        margin-bottom:30px
+    }
+    .navbar div .collapse .navbar-nav{
+        .menuLink{
+            width: 100%;
+        }
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
 
-/* Footer */
-
-div footer .fixed-footer{
-    background-color: rgba(255, 255, 255, 0.5);
+@media (max-width:768px){
+    .upper-side article{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .presentation p{
+        text-align: center;
+    }
+    .description-img{
+        display: none;
+    }
+    .description-title{
+        font-size: 2rem;
+    }
 }
