@@ -214,13 +214,13 @@ body {
 
 /* Media Queries */
 @media only screen and (max-width: 990px) {
-  .product-grid {
+  section .product-container .container .row div .product-grid {
     margin-bottom: 30px; }
-  .navbar div .collapse .navbar-nav {
+  header .navbar div .collapse .navbar-nav {
     display: flex;
     justify-content: center;
     align-items: center; }
-    .navbar div .collapse .navbar-nav .menuLink {
+    header .navbar div .collapse .navbar-nav .menuLink {
       width: 100%; } }
 
 @media (max-width: 768px) {
@@ -228,9 +228,9 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center; }
-  .presentation p {
-    text-align: center; }
-  .description-img {
+    .upper-side article .presentation p {
+      text-align: center; }
+  .body .description .row div .description-img {
     display: none; }
-  .description-title {
+  .body .description .row div .description-title {
     font-size: 2rem; } }
