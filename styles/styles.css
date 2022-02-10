@@ -1,29 +1,3 @@
-/* General */
-* {
-  font-family: 'Montserrat', sans-serif; }
-
-body {
-  background-color: #dac2fe; }
-  body .body {
-    margin-top: 10rem;
-    /* quienes-somos.html */ }
-    body .body .description {
-      background-color: #CEAFFE;
-      border-radius: 2rem;
-      padding-top: .5rem; }
-      body .body .description .row div .description-title {
-        font-family: vladimir;
-        font-size: 3rem; }
-  body .upper-side {
-    /* quienes-somos.html */
-    margin-top: 10rem;
-    margin-bottom: 8rem; }
-    body .upper-side .page-title {
-      font-family: vladimir;
-      font-size: 4rem; }
-  body div footer .fixed-footer {
-    background-color: rgba(255, 255, 255, 0.5); }
-
 /* Navbar */
 header .navbar {
   background-color: #CEAFFE; }
@@ -203,6 +177,33 @@ section {
 @font-face {
   font-family: vladimir;
   src: url(../fonts/VLADIMIR.TTF); }
+
+/* General */
+* {
+  font-family: 'Montserrat', sans-serif; }
+
+body {
+  background-color: #dac2fe;
+  /* Footer */ }
+  body .body {
+    margin-top: 10rem;
+    /* quienes-somos.html */ }
+    body .body .description {
+      background-color: #CEAFFE;
+      border-radius: 2rem;
+      padding-top: .5rem; }
+      body .body .description .row div .description-title {
+        font-family: vladimir;
+        font-size: 3rem; }
+  body .upper-side {
+    /* quienes-somos.html */
+    margin-top: 10rem;
+    margin-bottom: 8rem; }
+    body .upper-side .page-title {
+      font-family: vladimir;
+      font-size: 4rem; }
+  body div footer .fixed-footer {
+    background-color: rgba(255, 255, 255, 0.5); }
 
 /* Media Queries */
 @media only screen and (max-width: 990px) {
