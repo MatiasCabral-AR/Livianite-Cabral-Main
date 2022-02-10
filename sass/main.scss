@@ -39,6 +39,15 @@ body{
     /* Footer */
     div{
         footer{
+            .inicio{
+                left: 95%;
+                padding: 10px;
+                background-color: #CEAFFE;
+                &::before{
+                    content: attr(data-tip);
+                    opacity: 0;
+                }
+            }
             .fixed-footer{
                 background-color: rgba(255, 255, 255, 0.5);
             }
