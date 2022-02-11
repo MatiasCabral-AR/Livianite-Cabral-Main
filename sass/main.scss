@@ -40,17 +40,23 @@ body{
     div{
         footer{
             .inicio{
-                left: 90%;
-                p{
+                left: 95%;
+                width: fit-content;
+                .arriba{
+                    bottom: 1rem;
+                    width: 3rem;
+                    position: absolute;
                     display: none;
                 }
                 img{
+                    position: relative;
+                    background-color: aqua;
                     height: 2rem;
-                    width: 2rem;
+                    width: auto;
                 }
-            &:hover .inicio p{
-                display: block;
-            }
+                &:hover .arriba{
+                    display: inline;
+                }
             }
             .fixed-footer{
                 background-color: rgba(255, 255, 255, 0.5);
