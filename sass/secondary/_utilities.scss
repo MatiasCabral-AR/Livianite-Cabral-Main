@@ -4,3 +4,26 @@
     font-family: vladimir;
     src: url(../fonts/VLADIMIR.TTF);
 }
+/* Animation mixin */
+@mixin move-up ($rem) {
+    @if($rem > 0){
+        transform: translateY(-$rem);
+    }
+}
+
+/* Colors map */
+
+$colors: (
+    base : #ceaffe,
+    light : #dac2fe,
+    dark : #b686fd,
+);
+
+/* Function to get color */
+
+@function clr($color){
+    @if map-has-key($colors, $color){
+        @return map-get($colors, $color);
+    }
+    @return null;
+}
