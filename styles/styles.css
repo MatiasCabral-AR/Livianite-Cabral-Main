@@ -203,12 +203,14 @@ body {
       font-family: vladimir;
       font-size: 4rem; }
   body div footer .inicio {
-    left: 95%;
-    padding: 10px;
-    background-color: #CEAFFE; }
-    body div footer .inicio::before {
-      content: attr(data-tip);
-      opacity: 0; }
+    left: 90%; }
+    body div footer .inicio p {
+      display: none; }
+    body div footer .inicio img {
+      height: 2rem;
+      width: 2rem; }
+    body div footer .inicio:hover .inicio p {
+      display: block; }
   body div footer .fixed-footer {
     background-color: rgba(255, 255, 255, 0.5); }
 
@@ -233,4 +235,6 @@ body {
   .body .description .row div .description-img {
     display: none; }
   .body .description .row div .description-title {
-    font-size: 2rem; } }
+    font-size: 2rem; }
+  div footer div span {
+    display: none; } }
