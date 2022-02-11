@@ -203,20 +203,26 @@ body {
       font-family: vladimir;
       font-size: 4rem; }
   body div footer .inicio {
-    left: 95%;
     width: fit-content; }
-    body div footer .inicio .arriba {
-      bottom: 1rem;
-      width: 3rem;
+    body div footer .inicio::before {
+      content: attr(data-tip);
+      display: block;
       position: absolute;
-      display: none; }
+      right: -125%;
+      bottom: 2.5rem;
+      width: 7rem;
+      color: white;
+      background-color: #333;
+      text-align: center;
+      opacity: 0;
+      transition: all .1s ease-in;
+      pointer-events: none; }
     body div footer .inicio img {
-      position: relative;
       background-color: aqua;
       height: 2rem;
       width: auto; }
-    body div footer .inicio:hover .arriba {
-      display: inline; }
+    body div footer .inicio:hover::before {
+      opacity: 1; }
   body div footer .fixed-footer {
     background-color: rgba(255, 255, 255, 0.5); }
 
