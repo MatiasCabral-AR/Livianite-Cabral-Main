@@ -9,7 +9,7 @@
 
 
 body{
-    background-color: #dac2fe;
+    background-color: clr(light);
     .body{
         margin-top: 10rem;
         /* quienes-somos.html */
@@ -22,7 +22,7 @@ body{
                     }
                 }
             }
-            background-color: #CEAFFE;
+            background-color: clr(base);
             border-radius: 2rem;
             padding-top: .5rem;
         }
@@ -39,30 +39,34 @@ body{
     /* Footer */
     div{
         footer{
-            .inicio{
-                width: fit-content;
-                left: 94vw;
-                &::before{
-                    content: attr(data-tip);
-                    display: block;
+            div{
+                .inicio{
                     position: absolute;
-                    right: -125%;
-                    width: 7rem;
-                    color: white;
-                    background-color: #333;
-                    text-align: center;
-                    opacity: 0;
-                    transition: all .3s;
-                    pointer-events: none;
-                }
-                img{
-                    background-color: aqua;
-                    height: 2rem;
-                    width: 2rem;
-                }
-                &:hover::before{
-                    opacity: 1;
-                    @include move-up(2.5rem);
+                    bottom: 0px;
+                    right: 38px;
+                    width: fit-content;
+                    &::before{
+                        content: attr(data-tip);
+                        display: block;
+                        position: absolute;
+                        right: -125%;
+                        width: 7rem;
+                        color: white;
+                        background-color: #333;
+                        text-align: center;
+                        opacity: 0;
+                        transition: all .3s;
+                        pointer-events: none;
+                    }
+                    img{
+                        background-color: clr(dark);
+                        height: 2rem;
+                        width: 2rem;
+                    }
+                    &:hover::before{
+                        opacity: 1;
+                        @include move-up(2rem);
+                    }
                 }
             }
             .fixed-footer{

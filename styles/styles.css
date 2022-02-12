@@ -192,7 +192,7 @@ body {
     margin-top: 10rem;
     /* quienes-somos.html */ }
     body .body .description {
-      background-color: #CEAFFE;
+      background-color: #ceaffe;
       border-radius: 2rem;
       padding-top: .5rem; }
       body .body .description .row div .description-title {
@@ -205,10 +205,12 @@ body {
     body .upper-side .page-title {
       font-family: vladimir;
       font-size: 4rem; }
-  body div footer .inicio {
-    width: fit-content;
-    left: 94vw; }
-    body div footer .inicio::before {
+  body div footer div .inicio {
+    position: absolute;
+    bottom: 0px;
+    right: 38px;
+    width: fit-content; }
+    body div footer div .inicio::before {
       content: attr(data-tip);
       display: block;
       position: absolute;
@@ -220,13 +222,13 @@ body {
       opacity: 0;
       transition: all .3s;
       pointer-events: none; }
-    body div footer .inicio img {
-      background-color: aqua;
+    body div footer div .inicio img {
+      background-color: #b686fd;
       height: 2rem;
       width: 2rem; }
-    body div footer .inicio:hover::before {
+    body div footer div .inicio:hover::before {
       opacity: 1;
-      transform: translateY(-2.5rem); }
+      transform: translateY(-2rem); }
   body div footer .fixed-footer {
     background-color: rgba(255, 255, 255, 0.5); }
 
