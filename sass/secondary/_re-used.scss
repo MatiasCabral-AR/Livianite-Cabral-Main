@@ -85,10 +85,10 @@ section{
                                         color: clr(monochromatic, light);
                                         background-color: clr(livianite, dark);
                                     }
-                                    &:hover:before{
+                                    &:hover::before{
                                             opacity: 1;
                                     } 
-                                    &:before{
+                                    &::before{
                                         content:attr(data-tip);
                                         color: clr(monochromatic, light);
                                         background-color: clr(monochromatic, dark);
@@ -164,27 +164,17 @@ section{
                                 width: 100%;
                                 height: auto;
                             }
-                        .product-discount-label{
-                            color: clr(monochromatic, light);
-                            background-color: clr(monochromatic, gray-dark);
-                            font-size:12px;
-                            padding:2px 7px;
-                            display:block;
-                            position:absolute;
-                            top:10px;
-                            left:auto;
-                            right: 0;
-                        }
-                        .product-new-label{
-                            color: clr(monochromatic, light);
-                            background-color: clr(livianite, dark);
-                            font-size:12px;
-                            padding:2px 7px;
-                            display:block;
-                            position:absolute;
-                            top:10px;
-                            left:0;
-                        }
+                            .product-discount-label{
+                                @extend .lbl;
+                                background-color: clr(monochromatic, gray-dark);
+                                left:auto;
+                                right: 0;
+                            }
+                            .product-new-label{
+                                @extend .lbl;
+                                background-color: clr(livianite, dark);
+                                left:0;
+                            }
                         }
                         .pic-1{
                             opacity:1;

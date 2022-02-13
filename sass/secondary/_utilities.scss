@@ -24,7 +24,7 @@ $colors: (
     @return map-get(map-get($colors, $type), $color);
 }
 
-/* Style for button */
+/* Style for button and label */
 
 .btn{
     position: relative;
@@ -32,4 +32,13 @@ $colors: (
     border: 1px solid clr(livianite, dark);
     border-radius: 1rem;
     color: clr(livianite, dark);
+}
+
+.lbl{
+    color: clr(monochromatic, light);
+    font-size:1rem;
+    padding:.1rem .3rem;
+    display:block;
+    position:absolute;
+    top: .5rem;
 }

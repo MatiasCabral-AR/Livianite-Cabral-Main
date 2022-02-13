@@ -82,6 +82,24 @@ body{
                     }
                 }
             }
+            .product{
+                .product-image{
+                    .new-sale{
+                        @extend .lbl;
+                        background-color: clr(livianite, dark);
+                        left:0;
+                    }
+                    .discount{
+                        @extend .lbl;
+                        background-color: clr(monochromatic, gray-dark);
+                        left:auto;
+                        right: 0;
+                    }
+                    a{
+                        z-index: 0;
+                    }
+                }
+            }
         }
     }
 }
