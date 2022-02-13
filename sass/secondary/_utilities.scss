@@ -14,16 +14,12 @@
 /* Colors map */
 
 $colors: (
-    base : #ceaffe,
-    light : #dac2fe,
-    dark : #b686fd,
+    monochromatic: (light : #fff, gray-light : #777, gray-dark : #333, dark : #000),
+    livianite: (base : #ceaffe, light : #dac2fe, dark : #b686fd ) 
 );
 
 /* Function to get color */
 
-@function clr($color){
-    @if map-has-key($colors, $color){
-        @return map-get($colors, $color);
-    }
-    @return null;
+@function clr($type, $color){
+    @return map-get(map-get($colors, $type), $color);
 }

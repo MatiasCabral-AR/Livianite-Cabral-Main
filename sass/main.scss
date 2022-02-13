@@ -1,5 +1,5 @@
-@import 'secondary/re-used';
 @import 'secondary/utilities';
+@import 'secondary/re-used';
 
 /* General */
 
@@ -7,9 +7,8 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-
 body{
-    background-color: clr(light);
+    background-color: clr(livianite, light);
     .body{
         margin-top: 10rem;
         /* quienes-somos.html */
@@ -22,7 +21,7 @@ body{
                     }
                 }
             }
-            background-color: clr(base);
+            background-color: clr(livianite, base);
             border-radius: 2rem;
             padding-top: .5rem;
         }
@@ -51,15 +50,15 @@ body{
                         position: absolute;
                         right: -125%;
                         width: 7rem;
-                        color: white;
-                        background-color: #333;
+                        color: clr(monochromatic, light);
+                        background-color: clr(livianite, dark);
                         text-align: center;
                         opacity: 0;
                         transition: all .3s;
                         pointer-events: none;
                     }
                     img{
-                        background-color: clr(dark);
+                        background-color: clr(livianite, dark);
                         height: 2rem;
                         width: 2rem;
                     }

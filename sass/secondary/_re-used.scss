@@ -1,8 +1,10 @@
+@import 'utilities';
+
 /* Navbar */
 
 header{
     .navbar{
-        background-color: #CEAFFE;
+        background-color: clr(livianite, base);
         .container-fluid{
             .navbar-brand{
                 font-family: vladimir;
@@ -12,7 +14,7 @@ header{
         .collapse{
             .nav-item{
                 .nav-link:hover{
-                    background-color: #b686fd;
+                    background-color: clr(livianite, dark);
                 }
             }
             .navbar-nav{
@@ -20,11 +22,11 @@ header{
                     width: 10rem;
                     .dropdown-menu{
                         .submenu-link:hover{
-                            background-color: #b686fd;
+                            background-color: clr(livianite, dark);
                         }
                         border: none;
                         border-radius: none;
-                        background-color: #CEAFFE;
+                        background-color: clr(livianite, base);
                     }           
                 }
             }
@@ -38,16 +40,16 @@ section{
     .immediate-stock{
         /* index-html */
         margin-bottom: 0;
-        background-color: #CEAFFE;
+        background-color: clr(livianite, base);
     }
     .popular-products{
         margin-top: 0;
-        background-color: #b686fd;
+        background-color: clr(livianite, dark);
     }
     .design-container{
         
     /* disenos.html */
-        background-color: #CEAFFE;
+        background-color: clr(livianite, base);
     }
     /* General Content */
     .product-container{
@@ -57,11 +59,11 @@ section{
             .grid-title{
                 text-decoration: none;
                 font-size:3rem;
-                color: black;
+                color: clr(monochromatic, dark);
                 .anchor-title{
                     text-decoration: none;
                     font-size:3rem;
-                    color: black;
+                    color: clr(monochromatic, dark);
                 }
             }
             .row{
@@ -71,7 +73,7 @@ section{
                             opacity: 1;
                         }
                         &:hover .title a{
-                            color: #000;
+                            color: clr(monochromatic, dark);
                         }
                         &:hover .social{
                             opacity:1;
@@ -80,16 +82,16 @@ section{
                                 display: inline-block;
                                 a{
                                     &:hover{
-                                        color:#fff;
-                                        background-color:#b686fd;
+                                        color: clr(monochromatic, light);
+                                        background-color: clr(livianite, dark);
                                     }
                                     &:hover:before{
                                             opacity: 1;
                                     } 
                                     &:before{
                                         content:attr(data-tip);
-                                        color:#fff;
-                                        background-color:#000;
+                                        color: clr(monochromatic, light);
+                                        background-color: clr(monochromatic, dark);
                                         font-size:12px;
                                         letter-spacing:1px;
                                         line-height:20px;
@@ -101,8 +103,8 @@ section{
                                         left:50%;
                                         top:-30px;
                                     }
-                                    color:#fff;
-                                    background-color:#333;
+                                    color: clr(monochromatic, light);
+                                    background-color: clr(monochromatic, gray-dark);
                                     font-size:16px;
                                     line-height:40px;
                                     text-align:center;
@@ -121,19 +123,19 @@ section{
                         position:relative;
                         z-index:1;
                         .add-to-cart{
-                            color:#000;
+                            color: clr(monochromatic, dark);
                             font-size:13px;
                             font-weight:600;
                         }
                         .price{
-                            color:#333;
+                            color: clr(monochromatic, gray-dark);
                             font-size:17px;
                             font-weight:700;
                             margin-bottom:8px;
                             text-align:center;
                             transition:all .3s;
                             span{
-                                color:#999;
+                                color: clr(monochromatic, gray-light);
                                 font-size:13px;
                                 font-weight:400;
                                 text-decoration:line-through;
@@ -142,7 +144,7 @@ section{
                             }
                         }
                         .product-content{
-                            background-color:#fff;
+                            background-color: clr(monochromatic, light);
                             text-align:center;
                             padding:12px 0;
                             margin:0 auto;
@@ -163,8 +165,8 @@ section{
                                 height: auto;
                             }
                         .product-discount-label{
-                            color:#fff;
-                            background-color:#333;
+                            color: clr(monochromatic, light);
+                            background-color: clr(monochromatic, gray-dark);
                             font-size:12px;
                             padding:2px 7px;
                             display:block;
@@ -174,8 +176,8 @@ section{
                             right: 0;
                         }
                         .product-new-label{
-                            color:#fff;
-                            background-color:#b686fd;
+                            color: clr(monochromatic, light);
+                            background-color: clr(livianite, dark);
                             font-size:12px;
                             padding:2px 7px;
                             display:block;
@@ -212,14 +214,13 @@ section{
                             font-size:13px;
                             font-weight:400;
                             letter-spacing:.5px;
-                            text-transform:capitalize;
                             margin:0 0 10px;
                             transition:all .3s ease 0s;
                             a{
                                 &:hover{
-                                    color: #000;
+                                    color: clr(monochromatic, dark);
                                 }
-                                color: #777;
+                                color: clr(monochromatic, gray-light);
                             }
                         }
                     }

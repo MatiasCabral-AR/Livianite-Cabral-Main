@@ -1,6 +1,22 @@
+/* Fonts */
+@font-face {
+  font-family: vladimir;
+  src: url(../fonts/VLADIMIR.TTF); }
+
+/* Animation mixin */
+/* Colors map */
+/* Function to get color */
+/* Fonts */
+@font-face {
+  font-family: vladimir;
+  src: url(../fonts/VLADIMIR.TTF); }
+
+/* Animation mixin */
+/* Colors map */
+/* Function to get color */
 /* Navbar */
 header .navbar {
-  background-color: #CEAFFE; }
+  background-color: #ceaffe; }
   header .navbar .container-fluid .navbar-brand {
     font-family: vladimir;
     font-size: 3rem; }
@@ -11,7 +27,7 @@ header .navbar {
     header .navbar .collapse .navbar-nav .menuLink .dropdown-menu {
       border: none;
       border-radius: none;
-      background-color: #CEAFFE; }
+      background-color: #ceaffe; }
       header .navbar .collapse .navbar-nav .menuLink .dropdown-menu .submenu-link:hover {
         background-color: #b686fd; }
 
@@ -21,24 +37,24 @@ section {
   section .immediate-stock {
     /* index-html */
     margin-bottom: 0;
-    background-color: #CEAFFE; }
+    background-color: #ceaffe; }
   section .popular-products {
     margin-top: 0;
     background-color: #b686fd; }
   section .design-container {
     /* disenos.html */
-    background-color: #CEAFFE; }
+    background-color: #ceaffe; }
   section .product-container {
     padding-bottom: 2rem;
     padding-top: 1rem; }
     section .product-container .container .grid-title {
       text-decoration: none;
       font-size: 3rem;
-      color: black; }
+      color: #000; }
       section .product-container .container .grid-title .anchor-title {
         text-decoration: none;
         font-size: 3rem;
-        color: black; }
+        color: #000; }
     section .product-container .container .row div .product-grid {
       text-align: center;
       padding: 0 0 72px;
@@ -97,7 +113,7 @@ section {
         text-align: center;
         transition: all .3s; }
         section .product-container .container .row div .product-grid .price span {
-          color: #999;
+          color: #777;
           font-size: 13px;
           font-weight: 400;
           text-decoration: line-through;
@@ -165,7 +181,6 @@ section {
         font-size: 13px;
         font-weight: 400;
         letter-spacing: .5px;
-        text-transform: capitalize;
         margin: 0 0 10px;
         transition: all .3s ease 0s; }
         section .product-container .container .row div .product-grid .title a {
@@ -173,14 +188,6 @@ section {
           section .product-container .container .row div .product-grid .title a:hover {
             color: #000; }
 
-/* Fonts */
-@font-face {
-  font-family: vladimir;
-  src: url(../fonts/VLADIMIR.TTF); }
-
-/* Animation mixin */
-/* Colors map */
-/* Function to get color */
 /* General */
 * {
   font-family: 'Montserrat', sans-serif; }
@@ -216,8 +223,8 @@ body {
       position: absolute;
       right: -125%;
       width: 7rem;
-      color: white;
-      background-color: #333;
+      color: #fff;
+      background-color: #b686fd;
       text-align: center;
       opacity: 0;
       transition: all .3s;
