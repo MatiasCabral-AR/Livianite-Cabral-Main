@@ -6,6 +6,14 @@
 /* Animation mixin */
 /* Colors map */
 /* Function to get color */
+/* Style for button */
+.btn, body main div .product-finance div button {
+  position: relative;
+  background-color: transparent;
+  border: 1px solid #b686fd;
+  border-radius: 1rem;
+  color: #b686fd; }
+
 /* Fonts */
 @font-face {
   font-family: vladimir;
@@ -14,6 +22,14 @@
 /* Animation mixin */
 /* Colors map */
 /* Function to get color */
+/* Style for button */
+.btn, body main div .product-finance div button {
+  position: relative;
+  background-color: transparent;
+  border: 1px solid #b686fd;
+  border-radius: 1rem;
+  color: #b686fd; }
+
 /* Navbar */
 header .navbar {
   background-color: #ceaffe; }

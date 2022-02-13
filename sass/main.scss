@@ -73,6 +73,17 @@ body{
             }
         }
     }
+    main{
+        div{
+            .product-finance{
+                div{
+                    button{
+                        @extend .btn;
+                    }
+                }
+            }
+        }
+    }
 }
 
 @import 'secondary/media-queries';

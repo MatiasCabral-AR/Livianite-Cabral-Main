@@ -23,3 +23,13 @@ $colors: (
 @function clr($type, $color){
     @return map-get(map-get($colors, $type), $color);
 }
+
+/* Style for button */
+
+.btn{
+    position: relative;
+    background-color: transparent;
+    border: 1px solid clr(livianite, dark);
+    border-radius: 1rem;
+    color: clr(livianite, dark);
+}
