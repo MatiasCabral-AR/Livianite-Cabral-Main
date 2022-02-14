@@ -1,6 +1,16 @@
 /* Media Queries */
 
 @media only screen and (max-width:990px){
+    .upper-side{
+        div{
+            .product-thumbnails{
+                display: none;
+            }
+            
+        
+        }
+    }
+    
     section{
         .product-container{
             .container{

@@ -7,8 +7,6 @@
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" 
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Montserrat Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -57,19 +55,44 @@
               </div>
           </nav>
     </header>
-    <main class="upper-side container-fluid">
-        <div class="product-thumbnails">
-            <ul class="thumbnail-list list-unstyled">
-                <li><img src="../../img/producto.png" alt=""></li>
-                <li><img src="../../img/producto.png" alt=""></li>
-                <li><img src="../../img/producto.png" alt=""></li>
-                <li><img src="../../img/producto.png" alt=""></li>
-            </ul>
+    <main class="upper-side row container-fluid d-flex">
+        <div class="col-md-8 col-sm-12 d-flex">
+                <div class="product-thumbnails">
+                    <ul class="thumbnail-list list-unstyled d-flex flex-column my-auto">
+                        <li class="d-flex justify-content-center"><img class="mt-1 w-50"src="../../img/producto.png" alt=""></li>
+                        <li class="d-flex justify-content-center"><img class="mt-1 w-50"src="../../img/producto.png" alt=""></li>
+                        <li class="d-flex justify-content-center"><img class="my-1 w-50"src="../../img/producto.png" alt=""></li>
+                    </ul>
+                </div>
+                <div class="product-featured d-flex w-100 flex-row justify-content-center align-items-center mb-3">
+                    <i class="me-3 fas fa-caret-left fa-3x d-lg-none"></i>
+                    <img src="../../img/producto.png" alt="">
+                    <i class="ms-3 fas fa-caret-right fa-3x d-lg-none"></i>
+                </div>
         </div>
-        <div class="product-featured">
-            <img src="../../img/producto.png" alt="">
+        <div class="col-md-4 col-sm-12">
+            <p class="product-name mb-2 display-6">Nombre del Producto</p>
+            <p>Descripcion del Producto</p>
+            <p class="display-4">$ XXXX</p>
+            <p class="text-success"><i class="fa fa-credit-card"></i> Hasta 12 cuotas sin interes de $ XXX</p>
+            <p class="mb-3"><i class="fa fa-truck"></i> Envios a todo el pais</p>
+            <button class="btn btn-dark text-light btn-block">Comprar</button>
         </div>
     </main>
+    <section class="container-fluid">
+        <div class="row">
+            <p class="text-center display-4 mb-3">Comentarios sobre este Producto</p>
+        </div>
+        <div class="row">
+            <ul class="list-unstyled">
+                <li class="my-3 text-center"><p><i class="fas fa-user"> Nombre de Cliente :</i>  <i class="fas fa-comment"></i>  Comentario Centrado sobre el Producto.</p></li>
+                <li class="my-3 text-center"><p><i class="fas fa-user"> Nombre de Cliente :</i>  <i class="fas fa-comment"></i>  Comentario Centrado sobre el Producto.</p></li>
+                <li class="my-3 text-center"><p><i class="fas fa-user"> Nombre de Cliente :</i>  <i class="fas fa-comment"></i>  Comentario Centrado sobre el Producto.</p></li>
+                <li class="my-3 text-center"><p><i class="fas fa-user"> Nombre de Cliente :</i>  <i class="fas fa-comment"></i>  Comentario Centrado sobre el Producto.</p></li>
+                <li class="my-3 text-center"><p><i class="fas fa-user"> Nombre de Cliente :</i>  <i class="fas fa-comment"></i>  Comentario Centrado sobre el Producto.</p></li>
+            </ul>
+        </div>
+    </section>
     <div class="container-fluid" id="footer">
         <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 mt-4">
           <div class="d-flex align-items-center">
@@ -84,6 +107,7 @@
         </footer>
       </div>
     <!-- Scripts -->
+    <script src="https://kit.fontawesome.com/77868dd7b9.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" 
     crossorigin="anonymous"></script>
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>

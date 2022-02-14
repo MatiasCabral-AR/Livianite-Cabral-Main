@@ -24,11 +24,11 @@ $colors: (
     @return map-get(map-get($colors, $type), $color);
 }
 
-/* Style for label */
+/* Label styling for @extend to other classes */
 
 .lbl{
     color: clr(monochromatic, light);
-    font-size:1rem;
+    font-size: 1rem;
     padding:.1rem .3rem;
     display:block;
     position:absolute;

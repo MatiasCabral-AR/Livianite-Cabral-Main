@@ -1,5 +1,3 @@
-@import 'secondary/utilities';
-@import 'secondary/re-used';
 
 /* General */
 
@@ -27,6 +25,17 @@ body{
         }
     }
     .upper-side{
+        /* product.html */
+        div{
+            .product-thumbnails{
+
+            }
+            .product-featured{
+                span{
+                    width: 2rem;
+                }
+            }
+        }
         /* quienes-somos.html */
         .page-title{
             font-family: vladimir;
@@ -74,5 +83,3 @@ body{
         }
     }
 }
-
-@import 'secondary/media-queries';

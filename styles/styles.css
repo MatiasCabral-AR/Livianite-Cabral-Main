@@ -6,15 +6,8 @@
 /* Animation mixin */
 /* Colors map */
 /* Function to get color */
-/* Style for button and label */
-.btn, body main div .product-finance div button {
-  position: relative;
-  background-color: transparent;
-  border: 1px solid #b686fd;
-  border-radius: 1rem;
-  color: #b686fd; }
-
-.lbl, section .product-container .container .row div .product-grid .product-image .product-discount-label, section .product-container .container .row div .product-grid .product-image .product-new-label, body main div .product .product-image .new-sale, body main div .product .product-image .discount {
+/* Label styling for @extend to other classes */
+.lbl, section .product-container .container .row div .product-grid .product-image .product-discount-label, section .product-container .container .row div .product-grid .product-image .product-new-label {
   color: #fff;
   font-size: 1rem;
   padding: .1rem .3rem;
@@ -30,15 +23,8 @@
 /* Animation mixin */
 /* Colors map */
 /* Function to get color */
-/* Style for button and label */
-.btn, body main div .product-finance div button {
-  position: relative;
-  background-color: transparent;
-  border: 1px solid #b686fd;
-  border-radius: 1rem;
-  color: #b686fd; }
-
-.lbl, section .product-container .container .row div .product-grid .product-image .product-discount-label, section .product-container .container .row div .product-grid .product-image .product-new-label, body main div .product .product-image .new-sale, body main div .product .product-image .discount {
+/* Label styling for @extend to other classes */
+.lbl, section .product-container .container .row div .product-grid .product-image .product-discount-label, section .product-container .container .row div .product-grid .product-image .product-new-label {
   color: #fff;
   font-size: 1rem;
   padding: .1rem .3rem;
@@ -226,9 +212,12 @@ body {
         font-family: vladimir;
         font-size: 3rem; }
   body .upper-side {
+    /* product.html */
     /* quienes-somos.html */
     margin-top: 10rem;
     margin-bottom: 8rem; }
+    body .upper-side div .product-featured span {
+      width: 2rem; }
     body .upper-side .page-title {
       font-family: vladimir;
       font-size: 4rem; }
@@ -258,18 +247,11 @@ body {
       transform: translateY(-2rem); }
   body div footer .fixed-footer {
     background-color: rgba(255, 255, 255, 0.5); }
-  body main div .product .product-image .new-sale {
-    background-color: #b686fd;
-    left: 0; }
-  body main div .product .product-image .discount {
-    background-color: #333;
-    left: auto;
-    right: 0; }
-  body main div .product .product-image a {
-    z-index: 0; }
 
 /* Media Queries */
 @media only screen and (max-width: 990px) {
+  .upper-side div .product-thumbnails {
+    display: none; }
   section .product-container .container .row div .product-grid {
     margin-bottom: 30px; }
   header .navbar div .collapse .navbar-nav {
