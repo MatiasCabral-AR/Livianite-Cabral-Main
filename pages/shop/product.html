@@ -56,8 +56,8 @@
           </nav>
     </header>
     <main class="upper-side row container-fluid d-flex">
-        <div class="col-md-8 col-sm-12 d-flex">
-                <div class="product-thumbnails">
+        <div class="col-md-8 col-sm-12 d-flex align-items-start">
+                <div class="product-thumbnails d-flex align-items-center">
                     <ul class="thumbnail-list list-unstyled d-flex flex-column my-auto">
                         <li class="d-flex justify-content-center"><img class="mt-1 w-50"src="../../img/producto.png" alt=""></li>
                         <li class="d-flex justify-content-center"><img class="mt-1 w-50"src="../../img/producto.png" alt=""></li>
@@ -65,9 +65,9 @@
                     </ul>
                 </div>
                 <div class="product-featured d-flex w-100 flex-row justify-content-center align-items-center mb-3">
-                    <i class="me-3 fas fa-caret-left fa-3x d-lg-none"></i>
-                    <img src="../../img/producto.png" alt="">
-                    <i class="ms-3 fas fa-caret-right fa-3x d-lg-none"></i>
+                    <i class="me-md-3 me-0 fas fa-caret-left fa-3x d-lg-none"></i>
+                    <img class="img-fluid" src="../../img/producto.png" alt="">
+                    <i class="ms-md-3 ms-0 fas fa-caret-right fa-3x d-lg-none"></i>
                 </div>
         </div>
         <div class="col-md-4 col-sm-12">
@@ -76,7 +76,19 @@
             <p class="display-4">$ XXXX</p>
             <p class="text-success"><i class="fa fa-credit-card"></i> Hasta 12 cuotas sin interes de $ XXX</p>
             <p class="mb-3"><i class="fa fa-truck"></i> Envios a todo el pais</p>
-            <button class="btn btn-dark text-light btn-block">Comprar</button>
+            <hr/>
+            <p class="mt-3 text-center">Medidas de la prenda</p>
+            <!-- A ser modificados con Javascript -->
+            <label for="medida1" class="form-label">Medida 1</label>
+            <input type="range" class="form-range" min="0" max="100" id="medida1">
+            <label for="medida2" class="form-label mt-2">Medida 2</label>
+            <input type="range" class="form-range" min="0" max="100" id="medida2">
+            <label for="medida3" class="form-label mt-2">Medida 3</label>
+            <input type="range" class="form-range" min="0" max="100" id="medida3">
+            <div class="buttons text-center mt-3">
+                <button class="btn btn-dark text-light btn-block">Comprar</button>
+                <button class="btn btn-dark text-light btn-block">Anadir a carrito</button>
+            </div>
         </div>
     </main>
     <section class="container-fluid">
@@ -85,11 +97,11 @@
         </div>
         <div class="row">
             <ul class="list-unstyled">
-                <li class="my-3 text-center"><p><i class="fas fa-user"> Nombre de Cliente :</i>  <i class="fas fa-comment"></i>  Comentario Centrado sobre el Producto.</p></li>
-                <li class="my-3 text-center"><p><i class="fas fa-user"> Nombre de Cliente :</i>  <i class="fas fa-comment"></i>  Comentario Centrado sobre el Producto.</p></li>
-                <li class="my-3 text-center"><p><i class="fas fa-user"> Nombre de Cliente :</i>  <i class="fas fa-comment"></i>  Comentario Centrado sobre el Producto.</p></li>
-                <li class="my-3 text-center"><p><i class="fas fa-user"> Nombre de Cliente :</i>  <i class="fas fa-comment"></i>  Comentario Centrado sobre el Producto.</p></li>
-                <li class="my-3 text-center"><p><i class="fas fa-user"> Nombre de Cliente :</i>  <i class="fas fa-comment"></i>  Comentario Centrado sobre el Producto.</p></li>
+                <li class="my-5 text-center"><p><i class="fas fa-user"> Nombre de Cliente :</i>  <i class="fas fa-comment"></i>  Comentario Centrado sobre el Producto.</p></li>
+                <li class="my-5 text-center"><p><i class="fas fa-user"> Nombre de Cliente :</i>  <i class="fas fa-comment"></i>  Comentario Centrado sobre el Producto.</p></li>
+                <li class="my-5 text-center"><p><i class="fas fa-user"> Nombre de Cliente :</i>  <i class="fas fa-comment"></i>  Comentario Centrado sobre el Producto.</p></li>
+                <li class="my-5 text-center"><p><i class="fas fa-user"> Nombre de Cliente :</i>  <i class="fas fa-comment"></i>  Comentario Centrado sobre el Producto.</p></li>
+                <li class="my-5 text-center"><p><i class="fas fa-user"> Nombre de Cliente :</i>  <i class="fas fa-comment"></i>  Comentario Centrado sobre el Producto.</p></li>
             </ul>
         </div>
     </section>
