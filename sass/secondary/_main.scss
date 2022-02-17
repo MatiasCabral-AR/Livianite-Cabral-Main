@@ -27,9 +27,6 @@ body{
     .upper-side{
         /* product.html */
         div{
-            .product-thumbnails{
-
-            }
             .product-featured{
                 span{
                     width: 2rem;
@@ -43,43 +40,5 @@ body{
         }
         margin-top: 10rem;
         margin-bottom: 8rem;
-    }
-    /* Footer */
-    div{
-        footer{
-            div{
-                .inicio{
-                    position: absolute;
-                    bottom: 0px;
-                    right: 38px;
-                    width: fit-content;
-                    &::before{
-                        content: attr(data-tip);
-                        display: block;
-                        position: absolute;
-                        right: -125%;
-                        width: 7rem;
-                        color: clr(monochromatic, light);
-                        background-color: clr(livianite, dark);
-                        text-align: center;
-                        opacity: 0;
-                        transition: all .3s;
-                        pointer-events: none;
-                    }
-                    img{
-                        background-color: clr(livianite, dark);
-                        height: 2rem;
-                        width: 2rem;
-                    }
-                    &:hover::before{
-                        opacity: 1;
-                        @include move-up(2rem);
-                    }
-                }
-            }
-            .fixed-footer{
-                background-color: rgba(255, 255, 255, 0.5);
-            }
-        }
     }
 }

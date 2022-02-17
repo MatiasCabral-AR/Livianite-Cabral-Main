@@ -6,7 +6,7 @@
 /* Animation mixin */
 /* Colors map */
 /* Function to get color */
-/* Label styling for @extend to other classes */
+/* Label styling to @extend into other classes */
 .lbl, section .product-container .container .row div .product-grid .product-image .product-discount-label, section .product-container .container .row div .product-grid .product-image .product-new-label {
   color: #fff;
   font-size: 1rem;
@@ -23,7 +23,7 @@
 /* Animation mixin */
 /* Colors map */
 /* Function to get color */
-/* Label styling for @extend to other classes */
+/* Label styling to @extend into other classes */
 .lbl, section .product-container .container .row div .product-grid .product-image .product-discount-label, section .product-container .container .row div .product-grid .product-image .product-new-label {
   color: #fff;
   font-size: 1rem;
@@ -177,30 +177,58 @@ section {
         margin: 0;
         list-style: none;
         opacity: 0;
-        transform: translateY(-50%) translateX(-50%);
         position: absolute;
         top: 100%;
-        left: 50%;
+        left: 25%;
         z-index: 1;
-        transition: all .3s ease 0s; }
+        transform: translateY(-1rem);
+        transition: all .3s ease-out; }
       section .product-container .container .row div .product-grid .title {
         font-size: 13px;
         font-weight: 400;
         letter-spacing: .5px;
         margin: 0 0 10px;
-        transition: all .3s ease 0s; }
+        transition: all .3s ease-out; }
         section .product-container .container .row div .product-grid .title a {
           color: #777; }
           section .product-container .container .row div .product-grid .title a:hover {
             color: #000; }
+
+/* Footer */
+div footer div .inicio {
+  position: absolute;
+  bottom: 0px;
+  right: 38px;
+  width: fit-content; }
+  div footer div .inicio::before {
+    content: attr(data-tip);
+    display: block;
+    position: absolute;
+    right: -125%;
+    width: 7rem;
+    color: #000;
+    background-color: #b686fd;
+    text-align: center;
+    opacity: 0;
+    transition: all .3s;
+    pointer-events: none; }
+  div footer div .inicio img {
+    background-color: #b686fd;
+    height: 2rem;
+    width: 2rem; }
+  div footer div .inicio:hover::before {
+    opacity: 1;
+    transform: translateY(-2rem); }
+
+div footer .fixed-footer {
+  background-color: rgba(255, 255, 255, 0.5); }
 
 /* General */
 * {
   font-family: 'Montserrat', sans-serif; }
 
 body {
-  background-color: #dac2fe;
-  /* Footer */ }
+  background-color: #dac2fe; }
   body .body {
     margin-top: 10rem;
     /* quienes-somos.html */ }
@@ -221,32 +249,6 @@ body {
     body .upper-side .page-title {
       font-family: vladimir;
       font-size: 4rem; }
-  body div footer div .inicio {
-    position: absolute;
-    bottom: 0px;
-    right: 38px;
-    width: fit-content; }
-    body div footer div .inicio::before {
-      content: attr(data-tip);
-      display: block;
-      position: absolute;
-      right: -125%;
-      width: 7rem;
-      color: #fff;
-      background-color: #b686fd;
-      text-align: center;
-      opacity: 0;
-      transition: all .3s;
-      pointer-events: none; }
-    body div footer div .inicio img {
-      background-color: #b686fd;
-      height: 2rem;
-      width: 2rem; }
-    body div footer div .inicio:hover::before {
-      opacity: 1;
-      transform: translateY(-2rem); }
-  body div footer .fixed-footer {
-    background-color: rgba(255, 255, 255, 0.5); }
 
 /* Media Queries */
 @media only screen and (max-width: 990px) {

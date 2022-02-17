@@ -24,7 +24,7 @@ $colors: (
     @return map-get(map-get($colors, $type), $color);
 }
 
-/* Label styling for @extend to other classes */
+/* Label styling to @extend into other classes */
 
 .lbl{
     color: clr(monochromatic, light);
