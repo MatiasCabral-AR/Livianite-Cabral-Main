@@ -228,7 +228,12 @@ div footer .fixed-footer {
   font-family: 'Montserrat', sans-serif; }
 
 body {
-  background-color: #dac2fe; }
+  background-color: #dac2fe;
+  /*     //index.html
+    .presentation-bg-img{
+        background-image: url("../../img/presentation.jpg");
+        background-size: cover;
+    }*/ }
   body .body {
     margin-top: 10rem;
     /* quienes-somos.html */ }
