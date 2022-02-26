@@ -1,47 +1,86 @@
 /* Media Queries */
 
-@media only screen and (max-width:990px){
-    .upper-side{
-        div{
-            .product-thumbnails{
-                display: none;
+@media only screen and (max-width:1320px){
+body{
+    .product-grid{
+        grid-template-areas: 
+            "img info"
+            "comm comm"
+            "rel rel";
+            .related-products{
+                display: flex;
+                justify-content: space-around;
+                flex-wrap: wrap;
+                p{
+                    display: inline;
+                    width: 100%;
+                }
             }
-            
-        
-        }
+            .product-images{
+                align-items: center;
+                .product-other-img{
+                    align-items: center;
+                    width: fit-content;
+                }
+            }
     }
-    
-    section{
-        .product-container{
-            .container{
-                .row{
-                    div{
-                        .product-grid{
-                            margin-bottom:30px
+}
+}
+
+@media only screen and (max-width:990px){
+body{
+        .product-grid{
+            .product-images{
+                flex-direction: column;
+                .product-main-img{
+                    justify-content: center;
+                    i{
+                        display: block;
+                    }
+                }
+                .product-other-img{
+                    margin-top: 1rem;
+                    width: 100%;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    img{
+                        width: 25%;
+                        padding: 0;
+                    }
+                }
+            }
+        }
+        section{
+            .product-container{
+                .container{
+                    .row{
+                        div{
+                            .product-grid{
+                                margin-bottom:30px
+                            }
                         }
                     }
                 }
             }
         }
-    }
-    header{
-        .navbar{
-            div{
-                .collapse{
-                    .navbar-nav{
-                        .menuLink{
-                            width: 100%;
+        header{
+            .navbar{
+                div{
+                    .collapse{
+                        .navbar-nav{
+                            .menuLink{
+                                width: 100%;
+                            }
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
                         }
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
                     }
                 }
             }
         }
     }
 }
-
 @media (max-width:768px){
     .upper-side{
         article{
@@ -77,5 +116,5 @@
                 }
             }
         }
-    } 
+    }
 }

@@ -31,14 +31,6 @@ body{
         background-size: cover;
     }*/
     .upper-side{
-        /* product.html */
-        div{
-            .product-featured{
-                span{
-                    width: 2rem;
-                }
-            }
-        }
         /* quienes-somos.html */
         .page-title{
             font-family: vladimir;
@@ -46,5 +38,97 @@ body{
         }
         margin-top: 10rem;
         margin-bottom: 8rem;
+    }
+    .product-grid{
+        margin-top: 10rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        display: grid;
+        grid-template-areas: 
+        "rel img info"
+        "rel comm comm";
+        grid-template-columns: 10% 60% 30% / 10% auto auto;
+        .related-products{
+            p{
+                text-align: center;
+            }
+            grid-area: rel;
+            width: fit-content;
+            background-color: clr(livianite, base);
+            .related-product{
+                margin-bottom: .5rem;
+                text-decoration: none;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                border: 1px solid clr(livianite, dark);
+                width: min-content;
+                img{
+                    width: 240px;
+                }
+                p{
+                    color: clr(monochromatic, dark);
+                    
+                }
+            }
+        }
+        .product-images{
+            background-color: aliceblue;
+            margin-left: 1rem;
+            margin-right: 1rem;
+            grid-area: img;
+            display: flex;
+            justify-content: flex-end;
+            flex-direction: row;
+            .product-main-img{
+                display: flex;
+                justify-content: start;
+                align-items: center;
+                background-color: black;
+                i{
+                    padding: .3rem;
+                    cursor: pointer;
+                    display: none;
+                }
+                img{
+                    cursor: zoom-in;
+                }
+            }
+            .product-other-img{
+                background-color: antiquewhite;
+                display: flex;
+                flex-direction: column;
+                align-items: end;
+                height: fit-content;
+                img{
+                    
+                    border: 1px solid clr(livianite, dark);
+                    width: 50%;
+                    padding: .5rem;
+                    cursor: pointer;
+                }
+            }
+        }
+        .product-info{
+            padding-left: 1rem;
+            grid-area: info;
+            border-left: 1px solid black;
+            .buttons{
+                display: flex;
+                justify-content: center;
+                button{
+                    border-style: none;
+                    margin: .3rem;
+                    border-radius: 8px;
+                    background-color: clr(livianite, dark);
+                    transition: color 300ms;
+                    &:hover{
+                        color: white;
+                        box-shadow: 0 0 5px clr(livianite, dark);
+                    }
+                }
+            }
+        }
     }
 }
