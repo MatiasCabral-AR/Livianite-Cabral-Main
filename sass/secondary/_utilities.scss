@@ -11,6 +11,17 @@
     }
 }
 
+/* Footer icon :before hover */
+@mixin before-icon{
+    content: attr(data-tip);
+    display: block;
+    position: absolute;
+    text-align: center;
+    opacity: 0;
+    transition: all .3s;
+    pointer-events: none;
+}
+
 /* Colors map */
 
 $colors: (
