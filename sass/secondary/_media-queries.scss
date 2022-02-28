@@ -2,7 +2,7 @@
 
 @media only screen and (max-width:1320px){
 body{
-    .product-grid{
+    .product-layout{
         grid-template-areas: 
             "img info"
             "comm comm"
@@ -75,21 +75,6 @@ body{
                             justify-content: center;
                             align-items: center;
                         }
-                    }
-                }
-            }
-        }
-        div{
-            footer{
-                div{
-                    .inicio{
-                        left: 4%;
-                    }
-                    .carrito{
-                        left: 9%;
-                    }
-                    .user{
-                        left: 14%;
                     }
                 }
             }

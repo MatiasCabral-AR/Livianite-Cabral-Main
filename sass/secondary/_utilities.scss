@@ -14,22 +14,24 @@
 /* Footer icon pisition & :before hover */
 @mixin before-icon{
     content: attr(data-tip);
+    font-size: small;
+    padding: 2px;
     display: block;
     position: absolute;
     text-align: center;
     opacity: 0;
     transition: all .3s;
     pointer-events: none;
+    color: clr(monochromatic, dark);
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
 @mixin footer-icon{
-    position: fixed;
-    width: 2rem;
-    height: 2rem;
-    bottom: 0px;
-    background-color: rgba(255, 255, 255, 0.5);
+    position: absolute;
     text-decoration: none;
+    width: 2rem;
 }
+
 
 
 /* Colors map */
