@@ -79,6 +79,21 @@ body{
                 }
             }
         }
+        div{
+            footer{
+                div{
+                    .inicio{
+                        left: 4%;
+                    }
+                    .carrito{
+                        left: 9%;
+                    }
+                    .user{
+                        left: 14%;
+                    }
+                }
+            }
+        }
     }
 }
 @media (max-width:768px){

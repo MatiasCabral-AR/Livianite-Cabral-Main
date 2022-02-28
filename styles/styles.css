@@ -4,7 +4,7 @@
   src: url(../fonts/VLADIMIR.TTF); }
 
 /* Animation mixin */
-/* Footer icon :before hover */
+/* Footer icon pisition & :before hover */
 /* Colors map */
 /* Function to get color */
 /* Label styling to @extend into other classes */
@@ -22,7 +22,7 @@
   src: url(../fonts/VLADIMIR.TTF); }
 
 /* Animation mixin */
-/* Footer icon :before hover */
+/* Footer icon pisition & :before hover */
 /* Colors map */
 /* Function to get color */
 /* Label styling to @extend into other classes */
@@ -203,7 +203,7 @@ div footer div {
   div footer div .inicio {
     position: absolute;
     bottom: 0px;
-    right: 15rem;
+    left: 1%;
     width: fit-content; }
     div footer div .inicio::before {
       content: attr(data-tip);
@@ -225,12 +225,13 @@ div footer div {
       opacity: 1;
       transform: translateY(-2rem); }
   div footer div .carrito {
-    position: absolute;
+    position: fixed;
     width: 2rem;
     height: 2rem;
     bottom: 0px;
-    right: 18rem;
-    background-color: rgba(255, 255, 255, 0.5); }
+    background-color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+    left: 5%; }
     div footer div .carrito::before {
       content: attr(data-tip);
       display: block;
@@ -246,6 +247,14 @@ div footer div {
     div footer div .carrito:hover::before {
       opacity: 1;
       transform: translateY(-2rem); }
+  div footer div .user {
+    position: fixed;
+    width: 2rem;
+    height: 2rem;
+    bottom: 0px;
+    background-color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+    left: 9%; }
 
 div footer .fixed-footer {
   background-color: rgba(255, 255, 255, 0.5); }
@@ -390,7 +399,13 @@ body {
     justify-content: center;
     align-items: center; }
     body header .navbar div .collapse .navbar-nav .menuLink {
-      width: 100%; } }
+      width: 100%; }
+  body div footer div .inicio {
+    left: 4%; }
+  body div footer div .carrito {
+    left: 9%; }
+  body div footer div .user {
+    left: 14%; } }
 
 @media (max-width: 768px) {
   .upper-side article {

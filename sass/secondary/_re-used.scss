@@ -229,7 +229,7 @@ div{
             .inicio{
                 position: absolute;
                 bottom: 0px;
-                right: 15rem;
+                left: 1%;
                 width: fit-content;
                 &::before{
                     @include before-icon;
@@ -249,12 +249,8 @@ div{
                 }
             }
             .carrito{
-                position: absolute;
-                width: 2rem;
-                height: 2rem;
-                bottom: 0px;
-                right: 18rem;
-                background-color: rgba(255, 255, 255, 0.5);
+                @include footer-icon;
+                left: 5%;
                 &::before{
                     @include before-icon;
                     left: -50%;
@@ -266,6 +262,10 @@ div{
                     opacity: 1;
                     @include move-up(2rem);
                 }
+            }
+            .user{
+                @include footer-icon;
+                left: 9%;
             }
         }
         .fixed-footer{
