@@ -236,8 +236,7 @@ body {
         background-size: cover;
     }*/ }
   body .body {
-    margin-top: 10rem;
-    /* quienes-somos.html */ }
+    margin-top: 10rem; }
     body .body .description {
       background-color: #ceaffe;
       border-radius: 2rem;
@@ -246,16 +245,38 @@ body {
         font-family: vladimir;
         font-size: 3rem; }
   body .upper-side {
-    /* quienes-somos.html */
     margin-top: 10rem;
     margin-bottom: 8rem; }
     body .upper-side .page-title {
       font-family: vladimir;
       font-size: 4rem; }
+  body .cart-title {
+    margin-top: 10rem;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-align: center; }
+  body .cart {
+    margin: auto auto 2rem 2rem;
+    display: flex; }
+    body .cart .cart-details {
+      display: inline; }
+      body .cart .cart-details .cart-product {
+        margin: .5rem auto;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center; }
+        body .cart .cart-details .cart-product div {
+          margin: auto 1rem; }
+        body .cart .cart-details .cart-product .cart-product-img {
+          display: inline-block; }
+          body .cart .cart-details .cart-product .cart-product-img img {
+            width: 50%; }
+    body .cart .cart-payment {
+      margin-left: auto;
+      margin-right: 2rem; }
   body .product-layout {
     margin-top: 10rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
     display: grid;
     grid-template-areas: "rel img info" "rel comm comm";
     grid-template-columns: 10% 60% 30% / 10% auto auto; }
@@ -354,6 +375,8 @@ body {
       body .product-layout .product-images .product-other-img img {
         width: 25%;
         padding: 0; }
+  body .product-layout .related-products .related-product {
+    flex-basis: 50%; }
   body section .product-container .container .row div .product-grid {
     margin-bottom: 30px; }
   body header .navbar div .collapse .navbar-nav {
@@ -374,6 +397,13 @@ body {
     grid-template-areas: "img" "info" "rel" "comm"; }
     body .product-layout .product-images {
       border-left: none; }
+    body .product-layout .product-info {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 1rem;
+      border: 2px solid #b686fd; }
   body .body .description .row div .description-img {
     display: none; }
   body .body .description .row div .description-title {

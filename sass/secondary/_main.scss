@@ -9,7 +9,7 @@ body{
     background-color: clr(livianite, light);
     .body{
         margin-top: 10rem;
-        /* quienes-somos.html */
+        //quienes-somos.html
         .description{
             .row{
                 div{
@@ -31,18 +31,51 @@ body{
         background-size: cover;
     }*/
     .upper-side{
-        /* quienes-somos.html */
+        margin-top: 10rem;
+        margin-bottom: 8rem;
+        // quienes-somos.html
         .page-title{
             font-family: vladimir;
             font-size: 4rem;
         }
-        margin-top: 10rem;
-        margin-bottom: 8rem;
     }
+    //carrito.html
+    .cart-title{
+        margin-top: 10rem;
+        margin-bottom: 2rem;
+        font-size: 2.5rem;
+        font-weight: 600;
+        text-align: center;
+    }
+    .cart{
+        margin:auto auto 2rem 2rem;
+        display: flex;
+        .cart-details{
+            display: inline;
+            .cart-product{
+                margin: .5rem auto;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                div{
+                    margin: auto 1rem;
+                }
+                .cart-product-img{
+                    display: inline-block;
+                    img{
+                        width: 50%;
+                    }
+                }
+            }
+        }
+        .cart-payment{
+            margin-left: auto;
+            margin-right: 2rem;
+        }
+    }
+    //product.html
     .product-layout{
         margin-top: 10rem;
-        margin-left: 1rem;
-        margin-right: 1rem;
         display: grid;
         grid-template-areas: 
         "rel img info"

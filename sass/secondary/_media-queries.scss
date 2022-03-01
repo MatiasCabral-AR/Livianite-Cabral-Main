@@ -49,6 +49,11 @@ body{
                     }
                 }
             }
+            .related-products{
+                .related-product{
+                    flex-basis: 50%;
+                }
+            }
         }
         section{
             .product-container{
@@ -103,6 +108,14 @@ body{
             "comm";
             .product-images{
                 border-left: none;
+            }
+            .product-info{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin-top: 1rem;
+                border: 2px solid clr(livianite, dark);
             }
         }
         .body{
