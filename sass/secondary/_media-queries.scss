@@ -82,37 +82,40 @@ body{
     }
 }
 @media (max-width:768px){
-    .upper-side{
-        article{
-            .presentation{
-                p{
-                    text-align: center;
-                }
-            }
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-    }
-    .body{
-        .description{
-            .row{
-                div{
-                    .description-img{
-                        display: none;
-                    }
-                    .description-title{
-                        font-size: 2rem;
+    body{
+        .upper-side{
+            article{
+                .presentation{
+                    p{
+                        text-align: center;
                     }
                 }
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
             }
         }
-    }
-    div{
-        footer{
-            div{
-                span{
-                    display: none;
+        .product-layout{
+            grid-template-areas:
+            "img"
+            "info"
+            "rel"
+            "comm";
+            .product-images{
+                border-left: none;
+            }
+        }
+        .body{
+            .description{
+                .row{
+                    div{
+                        .description-img{
+                            display: none;
+                        }
+                        .description-title{
+                            font-size: 2rem;
+                        }
+                    }
                 }
             }
         }

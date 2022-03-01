@@ -1,3 +1,7 @@
+/* Variable de Color */
+
+$bg-tp : rgba(255, 255, 255, 0.5);
+
 /* Fonts */
 
 @font-face {
@@ -11,7 +15,7 @@
     }
 }
 
-/* Footer icon pisition & :before hover */
+/* Footer icon position & :before hover */
 @mixin before-icon{
     content: attr(data-tip);
     font-size: small;
@@ -23,7 +27,7 @@
     transition: all .3s;
     pointer-events: none;
     color: clr(monochromatic, dark);
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: $bg-tp;
 }
 
 @mixin footer-icon{
@@ -31,8 +35,6 @@
     text-decoration: none;
     width: 2rem;
 }
-
-
 
 /* Colors map */
 

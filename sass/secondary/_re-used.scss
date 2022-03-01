@@ -69,79 +69,45 @@ section{
             .row{
                 div{
                     .product-grid{
-                        &:hover .pic-2{
-                            opacity: 1;
-                        }
-                        &:hover .title a{
-                            color: clr(monochromatic, dark);
-                        }
-                        &:hover .social{
-                            opacity:1;
-                            top:90%;
-                            li{
-                                display: inline-block;
-                                a{
-                                    &:hover{
-                                        color: clr(monochromatic, light);
-                                        background-color: clr(livianite, dark);
-                                    }
-                                    &:hover::before{
-                                            opacity: 1;
-                                    } 
-                                    &::before{
-                                        content:attr(data-tip);
-                                        color: clr(monochromatic, light);
-                                        background-color: clr(monochromatic, dark);
-                                        font-size:12px;
-                                        letter-spacing:1px;
-                                        line-height:20px;
-                                        padding:1px 5px;
-                                        white-space:nowrap;
-                                        opacity:0;
-                                        transform:translateX(-50%);
-                                        position:absolute;
-                                        left:50%;
-                                        top:-30px;
-                                    }
-                                    color: clr(monochromatic, light);
-                                    background-color: clr(monochromatic, gray-dark);
-                                    font-size:16px;
-                                    line-height:40px;
-                                    text-align:center;
-                                    height:40px;
-                                    width:40px;
-                                    margin:0 2px;
-                                    display:block;
-                                    position:relative;
-                                }
-                            }
-                        }
                         text-align:center;
                         padding:0 0 72px;
                         border:1px solid rgba(0,0,0,.1);
                         overflow:hidden;
                         position:relative;
                         z-index:1;
-                        .add-to-cart{
-                            color: clr(monochromatic, dark);
-                            font-size:13px;
-                            font-weight:600;
-                        }
-                        .price{
-                            color: clr(monochromatic, gray-dark);
-                            font-size:17px;
-                            font-weight:700;
-                            margin-bottom:8px;
-                            text-align:center;
-                            transition:all .3s;
-                            span{
-                                color: clr(monochromatic, gray-light);
-                                font-size:13px;
-                                font-weight:400;
-                                text-decoration:line-through;
-                                margin-left:3px;
-                                display:inline-block;
+                        &:hover .product-buy{
+                            @include move-up(3rem);
+                            transition: all .2s ease-out 0s;
+                            opacity: 1;
+                            a{
+                                &::before{
+                                    @include before-icon;
+                                }
+                                &:hover::before{
+                                    @include move-up(2rem);
+                                    opacity: 1;
+                                }
                             }
+                        }
+                        .product-buy{
+                            opacity: 0;
+                            a{
+                                text-decoration: none;
+                                i{
+                                    padding: .6rem;
+                                    background-color: $bg-tp;
+                                    transition: all .5s ease-out 0s;
+                                    cursor: pointer;
+                                }
+                                .ver{
+                                    margin-right: .2rem;
+                                }
+                                .agregar{
+                                    margin-left: .2rem;
+                                }
+                            }
+
+                            
                         }
                         .product-content{
                             background-color: clr(monochromatic, light);
@@ -153,12 +119,60 @@ section{
                             right:0;
                             z-index:1;
                             transition:all .3s;
+                            &:hover .title a{
+                                color: clr(monochromatic, dark);
+                            }
+                            .title{
+                                font-size:1rem;
+                                font-weight:400;
+                                letter-spacing:.5px;
+                                margin:0 0 10px;
+                                transition:all .3s ease-out;
+                                a{
+                                    &:hover{
+                                        color: clr(monochromatic, dark);
+                                        font-weight: 600;
+                                    }
+                                    color: clr(monochromatic, gray-light);
+                                }
+                            }
+                            .price{
+                                color: clr(monochromatic, gray-dark);
+                                font-size:17px;
+                                font-weight:700;
+                                margin-bottom:8px;
+                                text-align:center;
+                                transition:all .3s;
+                                span{
+                                    color: clr(monochromatic, gray-light);
+                                    font-size:13px;
+                                    font-weight:400;
+                                    text-decoration:line-through;
+                                    margin-left:3px;
+                                    display:inline-block;
+                                }
+                            }
                         }
                         .product-image{
                             position:relative;
                             transition:all .3s ease 0s;
                             a{
                                 display: block;
+                                cursor: default;
+                                .pic-1{
+                                    opacity:1;
+                                    transition:all .3s ease-out 0s
+                                }
+                                .pic-2{
+                                    opacity:0;
+                                    position:absolute;
+                                    top:0;
+                                    left:0;
+                                    transition:all .3s ease-out 0s
+                                }
+                                &:hover .pic-2{
+                                    opacity: 1;
+                                }
                             }
                             img{
                                 width: 100%;
@@ -174,43 +188,6 @@ section{
                                 @extend .lbl;
                                 background-color: clr(livianite, dark);
                                 left:0;
-                            }
-                        }
-                        .pic-1{
-                            opacity:1;
-                            transition:all .3s ease-out 0s
-                        }
-                        .pic-2{
-                            opacity:0;
-                            position:absolute;
-                            top:0;
-                            left:0;
-                            transition:all .3s ease-out 0s
-                        }
-                        .social{
-                            width:150px;
-                            padding:0;
-                            margin:0;
-                            list-style:none;
-                            opacity:0;
-                            position:absolute;
-                            top:100%;
-                            left:25%;
-                            z-index:1;
-                            @include move-up(1rem);
-                            transition:all .3s ease-out;
-                        }
-                        .title{
-                            font-size:13px;
-                            font-weight:400;
-                            letter-spacing:.5px;
-                            margin:0 0 10px;
-                            transition:all .3s ease-out;
-                            a{
-                                &:hover{
-                                    color: clr(monochromatic, dark);
-                                }
-                                color: clr(monochromatic, gray-light);
                             }
                         }
                     }
@@ -242,7 +219,7 @@ div{
             }
         }
         .fixed-footer{
-            background-color: rgba(255, 255, 255, 0.5);
+            background-color: $bg-tp;
             li{
                 a{
                     &::before{

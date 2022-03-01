@@ -1,3 +1,2 @@
 Navbar : https://getbootstrap.com/docs/5.1/components/navbar/
 Carousel : https://getbootstrap.com/docs/5.1/components/carousel/
-Product Grid : https://bootsnipp.com/snippets/xrXp9

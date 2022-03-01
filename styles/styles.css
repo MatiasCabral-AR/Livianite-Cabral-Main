@@ -1,10 +1,11 @@
+/* Variable de Color */
 /* Fonts */
 @font-face {
   font-family: vladimir;
   src: url(../fonts/VLADIMIR.TTF); }
 
 /* Animation mixin */
-/* Footer icon pisition & :before hover */
+/* Footer icon position & :before hover */
 /* Colors map */
 /* Function to get color */
 /* Label styling to @extend into other classes */
@@ -16,13 +17,14 @@
   position: absolute;
   top: .5rem; }
 
+/* Variable de Color */
 /* Fonts */
 @font-face {
   font-family: vladimir;
   src: url(../fonts/VLADIMIR.TTF); }
 
 /* Animation mixin */
-/* Footer icon pisition & :before hover */
+/* Footer icon position & :before hover */
 /* Colors map */
 /* Function to get color */
 /* Label styling to @extend into other classes */
@@ -83,63 +85,38 @@ section .product-container {
     overflow: hidden;
     position: relative;
     z-index: 1; }
-    section .product-container .container .row div .product-grid:hover .pic-2 {
+    section .product-container .container .row div .product-grid:hover .product-buy {
+      transform: translateY(-3rem);
+      transition: all .2s ease-out 0s;
       opacity: 1; }
-    section .product-container .container .row div .product-grid:hover .title a {
-      color: #000; }
-    section .product-container .container .row div .product-grid:hover .social {
-      opacity: 1;
-      top: 90%; }
-      section .product-container .container .row div .product-grid:hover .social li {
-        display: inline-block; }
-        section .product-container .container .row div .product-grid:hover .social li a {
-          color: #fff;
-          background-color: #333;
-          font-size: 16px;
-          line-height: 40px;
-          text-align: center;
-          height: 40px;
-          width: 40px;
-          margin: 0 2px;
-          display: block;
-          position: relative; }
-          section .product-container .container .row div .product-grid:hover .social li a:hover {
-            color: #fff;
-            background-color: #b686fd; }
-          section .product-container .container .row div .product-grid:hover .social li a:hover::before {
-            opacity: 1; }
-          section .product-container .container .row div .product-grid:hover .social li a::before {
-            content: attr(data-tip);
-            color: #fff;
-            background-color: #000;
-            font-size: 12px;
-            letter-spacing: 1px;
-            line-height: 20px;
-            padding: 1px 5px;
-            white-space: nowrap;
-            opacity: 0;
-            transform: translateX(-50%);
-            position: absolute;
-            left: 50%;
-            top: -30px; }
-    section .product-container .container .row div .product-grid .add-to-cart {
-      color: #000;
-      font-size: 13px;
-      font-weight: 600; }
-    section .product-container .container .row div .product-grid .price {
-      color: #333;
-      font-size: 17px;
-      font-weight: 700;
-      margin-bottom: 8px;
-      text-align: center;
-      transition: all .3s; }
-      section .product-container .container .row div .product-grid .price span {
-        color: #777;
-        font-size: 13px;
-        font-weight: 400;
-        text-decoration: line-through;
-        margin-left: 3px;
-        display: inline-block; }
+      section .product-container .container .row div .product-grid:hover .product-buy a::before {
+        content: attr(data-tip);
+        font-size: small;
+        padding: 2px;
+        display: block;
+        position: absolute;
+        text-align: center;
+        opacity: 0;
+        transition: all .3s;
+        pointer-events: none;
+        color: #000;
+        background-color: rgba(255, 255, 255, 0.5); }
+      section .product-container .container .row div .product-grid:hover .product-buy a:hover::before {
+        transform: translateY(-2rem);
+        opacity: 1; }
+    section .product-container .container .row div .product-grid .product-buy {
+      opacity: 0; }
+      section .product-container .container .row div .product-grid .product-buy a {
+        text-decoration: none; }
+        section .product-container .container .row div .product-grid .product-buy a i {
+          padding: .6rem;
+          background-color: rgba(255, 255, 255, 0.5);
+          transition: all .5s ease-out 0s;
+          cursor: pointer; }
+        section .product-container .container .row div .product-grid .product-buy a .ver {
+          margin-right: .2rem; }
+        section .product-container .container .row div .product-grid .product-buy a .agregar {
+          margin-left: .2rem; }
     section .product-container .container .row div .product-grid .product-content {
       background-color: #fff;
       text-align: center;
@@ -150,11 +127,50 @@ section .product-container {
       right: 0;
       z-index: 1;
       transition: all .3s; }
+      section .product-container .container .row div .product-grid .product-content:hover .title a {
+        color: #000; }
+      section .product-container .container .row div .product-grid .product-content .title {
+        font-size: 1rem;
+        font-weight: 400;
+        letter-spacing: .5px;
+        margin: 0 0 10px;
+        transition: all .3s ease-out; }
+        section .product-container .container .row div .product-grid .product-content .title a {
+          color: #777; }
+          section .product-container .container .row div .product-grid .product-content .title a:hover {
+            color: #000;
+            font-weight: 600; }
+      section .product-container .container .row div .product-grid .product-content .price {
+        color: #333;
+        font-size: 17px;
+        font-weight: 700;
+        margin-bottom: 8px;
+        text-align: center;
+        transition: all .3s; }
+        section .product-container .container .row div .product-grid .product-content .price span {
+          color: #777;
+          font-size: 13px;
+          font-weight: 400;
+          text-decoration: line-through;
+          margin-left: 3px;
+          display: inline-block; }
     section .product-container .container .row div .product-grid .product-image {
       position: relative;
       transition: all .3s ease 0s; }
       section .product-container .container .row div .product-grid .product-image a {
-        display: block; }
+        display: block;
+        cursor: default; }
+        section .product-container .container .row div .product-grid .product-image a .pic-1 {
+          opacity: 1;
+          transition: all .3s ease-out 0s; }
+        section .product-container .container .row div .product-grid .product-image a .pic-2 {
+          opacity: 0;
+          position: absolute;
+          top: 0;
+          left: 0;
+          transition: all .3s ease-out 0s; }
+        section .product-container .container .row div .product-grid .product-image a:hover .pic-2 {
+          opacity: 1; }
       section .product-container .container .row div .product-grid .product-image img {
         width: 100%;
         height: auto; }
@@ -165,37 +181,6 @@ section .product-container {
       section .product-container .container .row div .product-grid .product-image .product-new-label {
         background-color: #b686fd;
         left: 0; }
-    section .product-container .container .row div .product-grid .pic-1 {
-      opacity: 1;
-      transition: all .3s ease-out 0s; }
-    section .product-container .container .row div .product-grid .pic-2 {
-      opacity: 0;
-      position: absolute;
-      top: 0;
-      left: 0;
-      transition: all .3s ease-out 0s; }
-    section .product-container .container .row div .product-grid .social {
-      width: 150px;
-      padding: 0;
-      margin: 0;
-      list-style: none;
-      opacity: 0;
-      position: absolute;
-      top: 100%;
-      left: 25%;
-      z-index: 1;
-      transform: translateY(-1rem);
-      transition: all .3s ease-out; }
-    section .product-container .container .row div .product-grid .title {
-      font-size: 13px;
-      font-weight: 400;
-      letter-spacing: .5px;
-      margin: 0 0 10px;
-      transition: all .3s ease-out; }
-      section .product-container .container .row div .product-grid .title a {
-        color: #777; }
-        section .product-container .container .row div .product-grid .title a:hover {
-          color: #000; }
 
 /* Footer */
 div footer .float-footer li .footer-button {
@@ -294,7 +279,6 @@ body {
         body .product-layout .related-products .related-product p {
           color: #000; }
     body .product-layout .product-images {
-      background-color: aliceblue;
       margin-left: 1rem;
       margin-right: 1rem;
       grid-area: img;
@@ -304,8 +288,7 @@ body {
       body .product-layout .product-images .product-main-img {
         display: flex;
         justify-content: start;
-        align-items: center;
-        background-color: black; }
+        align-items: center; }
         body .product-layout .product-images .product-main-img i {
           padding: .3rem;
           cursor: pointer;
@@ -313,7 +296,6 @@ body {
         body .product-layout .product-images .product-main-img img {
           cursor: zoom-in; }
       body .product-layout .product-images .product-other-img {
-        background-color: antiquewhite;
         display: flex;
         flex-direction: column;
         align-items: end;
@@ -337,7 +319,7 @@ body {
           background-color: #b686fd;
           transition: color 300ms; }
           body .product-layout .product-info .buttons button:hover {
-            color: white;
+            color: #fff;
             box-shadow: 0 0 5px #b686fd; }
 
 /* Media Queries */
@@ -382,15 +364,17 @@ body {
       width: 100%; } }
 
 @media (max-width: 768px) {
-  .upper-side article {
+  body .upper-side article {
     display: flex;
     flex-direction: column;
     justify-content: center; }
-    .upper-side article .presentation p {
+    body .upper-side article .presentation p {
       text-align: center; }
-  .body .description .row div .description-img {
+  body .product-layout {
+    grid-template-areas: "img" "info" "rel" "comm"; }
+    body .product-layout .product-images {
+      border-left: none; }
+  body .body .description .row div .description-img {
     display: none; }
-  .body .description .row div .description-title {
-    font-size: 2rem; }
-  div footer div span {
-    display: none; } }
+  body .body .description .row div .description-title {
+    font-size: 2rem; } }

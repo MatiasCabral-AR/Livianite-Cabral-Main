@@ -74,7 +74,6 @@ body{
             }
         }
         .product-images{
-            background-color: aliceblue;
             margin-left: 1rem;
             margin-right: 1rem;
             grid-area: img;
@@ -85,7 +84,6 @@ body{
                 display: flex;
                 justify-content: start;
                 align-items: center;
-                background-color: black;
                 i{
                     padding: .3rem;
                     cursor: pointer;
@@ -96,7 +94,6 @@ body{
                 }
             }
             .product-other-img{
-                background-color: antiquewhite;
                 display: flex;
                 flex-direction: column;
                 align-items: end;
@@ -123,7 +120,7 @@ body{
                     background-color: clr(livianite, dark);
                     transition: color 300ms;
                     &:hover{
-                        color: white;
+                        color: clr(monochromatic, light);
                         box-shadow: 0 0 5px clr(livianite, dark);
                     }
                 }
