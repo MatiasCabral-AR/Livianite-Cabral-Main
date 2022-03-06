@@ -61,93 +61,104 @@
     <!-- LA SIGUIENTE SECCION SERA REEMPLAZADA POR FLEXBOX-GRID -->
     <main class="product-layout">
         <div class="related-products">
-            <p>Productos Relacionados</p>
-            <a href="product.html" class="related-product">
+            <p class="related-products-title">Productos Relacionados</p>
+            <a href="product.html" class="related-products-img">
                 <img src="../../img/lenceria2-1.jpg" alt="Imagen de Producto Relacionado">
                 <p>$ XXXX</p>
                 <p>Nombre del Producto</p>
             </a>
-            <a href="product.html" class="related-product">
+            <a href="product.html" class="related-products-img">
                 <img src="../../img/ropa3-2.jpg" alt="Imagen de Producto Relacionado">
                 <p>$ XXXX</p>
                 <p>Nombre del Producto</p>
             </a>
-            <a href="product.html" class="related-product">
+            <a href="product.html" class="related-products-img">
                 <img src="../../img/diseno1-2.jpg" alt="Imagen de Producto Relacionado">
                 <p>$ XXXX</p>
                 <p>Nombre del Producto</p>
             </a>
-            <a href="product.html" class="related-product">
+            <a href="product.html" class="related-products-img">
                 <img src="../../img/ropa2-1.jpg" alt="Imagen de Producto Relacionado">
                 <p>$ XXXX</p>
                 <p>Nombre del Producto</p>
-            </a>
-            
+            </a> 
         </div>
         <div class="product-images">
-            <div class="product-main-img">
+            <div class="product-images-main">
                 <i class="fas fa-caret-left fa-3x caret"></i>
                 <img src="../../img/producto.png" alt="Imagen Principal de Producto">
                 <i class="fas fa-caret-right fa-3x caret"></i>
             </div>
-            <div class="product-other-img">
+            <div class="product-images-other">
                 <img src="../../img/producto.png" alt="Imagen Secundaria de Producto">
                 <img src="../../img/producto.png" alt="Imagen Secundaria de Producto">
                 <img src="../../img/producto.png" alt="Imagen Secundaria de Producto">
             </div>
         </div>
         <div class="product-info">
-            <p class="product-name">Nombre del Producto</p>
-            <p class="product-description">Descripcion del Producto</p>
-            <p class="product-price">$ XXXX</p>
-            <p class="product-finance"><i class="fas fa-credit-card"></i>  Hasta 12 cuotas sin interes de $ XXX</p>
+            <p class="product-info-name">Nombre del Producto</p>
+            <p class="product-info-description">Descripcion del Producto</p>
+            <p class="product-info-price">$ XXXX</p>
+            <p class="product-info-finance"><i class="fas fa-credit-card"></i>  Hasta 12 cuotas sin interes de $ XXX</p>
             <a href=javascript:void(0)>Ver todos los medios de pago</a>
             <p class="product-shipment"><i class="fas fa-truck"></i>  Envios a Todo el Pais</p>
             <a href=javascript:void(0)>Ver mas formas de entrega</a>
             <hr/>
             <!-- Se utilizan nombres Genericos ya que existen distintos tipos de productos con distintos nombres y escala de medidas -->
-            <p class="measures-title">Selecciona las Medidas de tu Talla</p>
-            <ul>
+            <p class="product-info-measureTitle">Selecciona las Medidas de tu Talla</p>
+            <ul class="product-info-measures">
                 <li>
                     <div class="measure1">
-                        <label for="medida1">Medida 1 -&nbsp</label>
-                        <input type="number" placeholder="Inserte medida en cm">
+                        <label for="measure1">Medida 1 -&nbsp</label>
+                        <input name="measure1" type="number" placeholder="Inserte medida en cm">
                     </div>
                 </li>
                 <li>
                     <div class="measure2">
-                        <label for="medida1">Medida 2 - </label>
-                        <input type="number" placeholder="Inserte medida en cm">
+                        <label for="measure2">Medida 2 - </label>
+                        <input name="measure2" type="number" placeholder="Inserte medida en cm">
                     </div>
                 </li>
                 <li>
                     <div class="measure3">
-                        <label for="medida1">Medida 3 - </label>
-                        <input type="number" placeholder="Inserte medida en cm">
+                        <label for="measure3">Medida 3 - </label>
+                        <input name="measure3" type="number" placeholder="Inserte medida en cm">
                     </div>
                 </li>
             </ul>
-            <div class="buttons">
+            <label for="color">Selecciona el/los Colores</label>
+            <select class="product-info-color" name="color" id="color">
+                <option value="" disabled selected>Elige el color</option>
+                <option value="negro">Negro</option>
+                <option value="blanco">Blanco</option>
+                <option value="rosa-blanco">Rosa/Blanco</option>
+                <option value="rojo-negro">Rojo/Negro</option>
+            </select>
+            <div class="product-info-buyButtons">
                 <button>Comprar</button>
                 <button>Añadir a Carrito</button>
             </div>
         </div>
+        <section class="commentSection">
+            <div class="commentSection-question">
+                <label class="commentSection-question-label" for="question"> Pregunta a Livianite </label>
+                <textarea class="commentSection-question-input" name="question" id="question" rows="3" placeholder="Escribe tu pregunta..."></textarea>
+                <button class="commentSection-question-button">Enviar</button>
+            </div>
+            <hr>
+            <p class="commentSection-title">Ultimas preguntas realizadas</p>
+            <div class="commentSection-comment">
+                <p class="commentSection-comment-customer">Hola! Se puede elegir un talle de bralette y un talle diferente de less? Gracias</p>
+                <p class="commentSection-comment-owner">Hola como estas? Del 85 al 100 es talle 1. Y del 105 al 110 es talle 2. 
+                    Las bombachas al ser regulables, son acorde a los talles correspondientes</p>
+            </div>
+            <div class="commentSection-comment">
+                <p class="commentSection-comment-customer">Hola! se puede devolver o cambiar si no me va? obviamente sin uso. gracias</p>
+                <p class="commentSection-comment-owner">Hola como estas? Si, se puede devolver o cambiar</p>
+            </div>
+            <a class="commentSection-more" href="">Ver mas preguntas</a>
+        </section>
     </main>
-    <!-- LA SIGUIENTE SECCION SERA REEMPLAZADA POR FLEXBOX-GRID -->
-    <!-- <section class="container-fluid">
-        <div class="row">
-            <p class="text-center display-4 mb-3">Comentarios sobre este Producto</p>
-        </div>
-        <div class="row">
-            <ul class="list-unstyled">
-                <li class="my-5 text-center"><p><i class="fas fa-user"> Nombre de Cliente :</i>  <i class="fas fa-comment"></i>  Comentario Centrado sobre el Producto.</p></li>
-                <li class="my-5 text-center"><p><i class="fas fa-user"> Nombre de Cliente :</i>  <i class="fas fa-comment"></i>  Comentario Centrado sobre el Producto.</p></li>
-                <li class="my-5 text-center"><p><i class="fas fa-user"> Nombre de Cliente :</i>  <i class="fas fa-comment"></i>  Comentario Centrado sobre el Producto.</p></li>
-                <li class="my-5 text-center"><p><i class="fas fa-user"> Nombre de Cliente :</i>  <i class="fas fa-comment"></i>  Comentario Centrado sobre el Producto.</p></li>
-                <li class="my-5 text-center"><p><i class="fas fa-user"> Nombre de Cliente :</i>  <i class="fas fa-comment"></i>  Comentario Centrado sobre el Producto.</p></li>
-            </ul>
-        </div>
-    </section> -->
     <div class="container-fluid" id="footer">
         <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 mt-4">
             <ul class="float-footer col-auto h-auto list-unstyled ms-3 mb-5 fixed-bottom d-flex justify-content-start">

@@ -8,6 +8,8 @@ body{
             "comm comm"
             "rel rel";
             .related-products{
+                margin: auto;
+                height: auto;
                 display: flex;
                 justify-content: space-around;
                 flex-wrap: wrap;
@@ -32,13 +34,13 @@ body{
         .product-layout{
             .product-images{
                 flex-direction: column;
-                .product-main-img{
+                .product-images-main{
                     justify-content: center;
                     i{
                         display: block;
                     }
                 }
-                .product-other-img{
+                .product-images-other{
                     margin-top: 1rem;
                     width: 100%;
                     flex-direction: row;
@@ -50,7 +52,8 @@ body{
                 }
             }
             .related-products{
-                .related-product{
+                margin: 0;
+                .related-products-img{
                     flex-basis: 50%;
                 }
             }
@@ -104,8 +107,8 @@ body{
             grid-template-areas:
             "img"
             "info"
-            "rel"
-            "comm";
+            "comm"
+            "rel";
             .product-images{
                 border-left: none;
             }

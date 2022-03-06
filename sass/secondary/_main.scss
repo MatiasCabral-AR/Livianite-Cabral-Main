@@ -56,9 +56,9 @@ body{
                 margin: .5rem auto;
                 display: flex;
                 justify-content: flex-start;
-                align-items: center;
+                border-bottom: 1px solid clr(livianite, dark);
                 div{
-                    margin: auto 1rem;
+                    margin: 0 1rem;
                 }
                 .cart-product-img{
                     display: inline-block;
@@ -66,11 +66,50 @@ body{
                         width: 50%;
                     }
                 }
+                .cart-product-info{
+                    .cart-product-info-name{
+                        @include center-highlight;
+                    }
+                    .cart-product-info-unitPrize{
+                        @include center-highlight;
+                    }
+                }
+                .cart-product-size{
+                    .cart-product-size-title{
+                        @include center-highlight;
+                    }
+                }
+                .cart-product-quantity{
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    .cart-product-quantity-title{
+                        @include center-highlight;
+                    }
+                }
+                .cart-product-price{
+                    p{
+                        @include center-highlight;
+                    }
+                }
             }
         }
         .cart-payment{
-            margin-left: auto;
+            position: fixed;
+            right: 0;
             margin-right: 2rem;
+            margin-top: 4rem;
+            .cart-payment-buyButton{
+                display: flex;
+                justify-content: center;
+                .cart-payment-buyButton-button{
+                    width: 70%;
+                    border: none;
+                    border-radius: 5px;
+                    background-color: clr;
+                }
+            }
+
         }
     }
     //product.html
@@ -78,17 +117,20 @@ body{
         margin-top: 10rem;
         display: grid;
         grid-template-areas: 
-        "rel img info"
-        "rel comm comm";
-        grid-template-columns: 10% 60% 30% / 10% auto auto;
+        "rel img img info info"
+        "rel comm comm comm comm"
+        ;
         .related-products{
-            p{
-                text-align: center;
-            }
+            margin-left: 2rem;
             grid-area: rel;
             width: fit-content;
             background-color: clr(livianite, base);
-            .related-product{
+            height: 700px;
+            overflow-y: scroll;
+            p{
+                text-align: center;
+            }
+            .related-products-img{
                 margin-bottom: .5rem;
                 text-decoration: none;
                 display: flex;
@@ -97,11 +139,22 @@ body{
                 flex-direction: column;
                 border: 1px solid clr(livianite, dark);
                 width: min-content;
+                &:hover{
+                    background-color: clr(livianite, dark);
+                    img{
+                        opacity: 0.4;
+                    }
+                    p{
+                        color: clr(monochromatic, light);
+                    }
+                }
                 img{
                     width: 240px;
+                    transition: all 0.3s;
                 }
                 p{
                     color: clr(monochromatic, dark);
+                    transition: all 0.3s;
                     
                 }
             }
@@ -109,13 +162,14 @@ body{
         .product-images{
             margin-left: 1rem;
             margin-right: 1rem;
+            height: max-content;
             grid-area: img;
             display: flex;
             justify-content: flex-end;
             flex-direction: row;
-            .product-main-img{
+            .product-images-main{
                 display: flex;
-                justify-content: start;
+                justify-content: center;
                 align-items: center;
                 i{
                     padding: .3rem;
@@ -126,7 +180,7 @@ body{
                     cursor: zoom-in;
                 }
             }
-            .product-other-img{
+            .product-images-other{
                 display: flex;
                 flex-direction: column;
                 align-items: end;
@@ -142,22 +196,42 @@ body{
         .product-info{
             padding-left: 1rem;
             grid-area: info;
+            height: max-content;
+            top: 0;
             border-left: 1px solid black;
-            .buttons{
+            .product-info-buyButtons{
                 display: flex;
                 justify-content: center;
                 button{
-                    border-style: none;
-                    margin: .3rem;
-                    border-radius: 8px;
-                    background-color: clr(livianite, dark);
-                    transition: color 300ms;
-                    &:hover{
-                        color: clr(monochromatic, light);
-                        box-shadow: 0 0 5px clr(livianite, dark);
-                    }
+                    @include button;
                 }
             }
+        }
+        .commentSection{
+            grid-area: comm;
+            padding: .5rem;
+            border: 1px solid clr(livianite, dark);
+            border-radius: 6px;
+            .commentSection-question{
+                margin: 1rem auto;
+                display: flex;
+                flex-direction: column;
+                .commentSection-question-label{
+                    @include center-highlight;
+                }
+                .commentSection-question-input{
+                    @include input;
+                }
+                .commentSection-question-button{
+                    @include button;
+                }
+            }
+            .commentSection-title{
+                @include center-highlight;
+                margin-bottom: 2rem;
+            }
+            
+            
         }
     }
 }

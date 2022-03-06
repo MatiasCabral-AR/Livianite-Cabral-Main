@@ -15,6 +15,34 @@ $bg-tp : rgba(255, 255, 255, 0.5);
     }
 }
 
+/* Text Center and Highlight mixin */
+
+@mixin center-highlight{
+    text-align: center;
+    font-weight: 500;
+}
+
+/* Input styling mixin */
+
+@mixin input{
+    border: none;
+    border-radius: 4px;
+    padding: .2rem;
+}
+
+/* Button styling mixin */
+
+@mixin button{
+    border-style: none;
+    margin: .3rem;
+    border-radius: 8px;
+    background-color: clr(livianite, dark);
+    transition: color 300ms;
+        &:hover{
+            color: clr(monochromatic, light);
+            box-shadow: 0 0 5px clr(livianite, dark);
+        }
+}
 /* Footer icon position & :before hover */
 @mixin before-icon{
     content: attr(data-tip);
@@ -59,3 +87,4 @@ $colors: (
     position:absolute;
     top: .5rem;
 }
+
