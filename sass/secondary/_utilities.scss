@@ -18,6 +18,7 @@ $bg-tp : rgba(255, 255, 255, 0.5);
 /* Text Center and Highlight mixin */
 
 @mixin center-highlight{
+    text-decoration: none;
     text-align: center;
     font-weight: 500;
 }
@@ -63,6 +64,7 @@ $bg-tp : rgba(255, 255, 255, 0.5);
     text-decoration: none;
     width: 2rem;
 }
+
 
 /* Colors map */
 

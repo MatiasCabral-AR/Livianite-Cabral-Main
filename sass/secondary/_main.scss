@@ -117,18 +117,22 @@ body{
         margin-top: 10rem;
         display: grid;
         grid-template-areas: 
-        "rel img img info info"
-        "rel comm comm comm comm"
+        "rel img info"
+        "rel comm comm"
+        "rel comm comm"
         ;
         .related-products{
-            margin-left: 2rem;
             grid-area: rel;
-            width: fit-content;
             background-color: clr(livianite, base);
             height: 700px;
+            width: fit-content;
             overflow-y: scroll;
             p{
                 text-align: center;
+            }
+            .related-products-title{
+                margin-top: 1rem;
+                font-weight: 800;
             }
             .related-products-img{
                 margin-bottom: .5rem;
@@ -139,14 +143,10 @@ body{
                 flex-direction: column;
                 border: 1px solid clr(livianite, dark);
                 width: min-content;
-                &:hover{
-                    background-color: clr(livianite, dark);
-                    img{
-                        opacity: 0.4;
-                    }
-                    p{
-                        color: clr(monochromatic, light);
-                    }
+                &:hover p{
+                    @include center-highlight;
+                    border-radius: 3px;
+                    box-shadow: 0px 0px 7px clr(livianite, dark); 
                 }
                 img{
                     width: 240px;
@@ -229,6 +229,32 @@ body{
             .commentSection-title{
                 @include center-highlight;
                 margin-bottom: 2rem;
+            }
+            .commentSection-comment{
+                cursor: default;
+                .commentSection-comment-customer{
+                    &:hover::after{
+                        opacity: 1;
+                    }
+                    &::after{
+                        content: attr(data-tip);
+                        font-size: x-small;
+                        padding-left: .3rem;
+                        opacity: 0;
+                        transition: 0.2s ease-out;
+                    }
+                    i{
+                        padding: 0px .5rem;
+                    }
+                }
+                .commentSection-comment-owner{
+                    &::after{
+                        @extend .commentSection-comment-customer::after;
+                    }
+                    i{
+                        padding: 0px 1rem;
+                    }
+                }
             }
             
             
