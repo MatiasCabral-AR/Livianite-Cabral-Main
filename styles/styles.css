@@ -257,6 +257,7 @@ body {
       font-family: vladimir;
       font-size: 4rem; }
   body .cart-title {
+    background-color: aliceblue;
     margin-top: 10rem;
     margin-bottom: 2rem;
     font-size: 2.5rem;
@@ -275,9 +276,10 @@ body {
         body .cart .cart-details .cart-product div {
           margin: 0 1rem; }
         body .cart .cart-details .cart-product .cart-product-img {
-          display: inline-block; }
+          display: flex;
+          align-items: center; }
           body .cart .cart-details .cart-product .cart-product-img img {
-            width: 50%; }
+            width: 240px; }
         body .cart .cart-details .cart-product .cart-product-info .cart-product-info-name {
           text-decoration: none;
           text-align: center;
@@ -305,6 +307,8 @@ body {
     body .cart .cart-payment {
       position: fixed;
       right: 0;
+      width: 20%;
+      flex-direction: column;
       margin-right: 2rem;
       margin-top: 4rem; }
       body .cart .cart-payment .cart-payment-buyButton {
@@ -460,7 +464,16 @@ body {
       align-items: center; }
       body .product-layout .product-images .product-other-img {
         align-items: center;
-        width: fit-content; } }
+        width: fit-content; }
+  body .cart {
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    body .cart .cart-payment {
+      position: relative;
+      width: 100%; } }
 
 @media only screen and (max-width: 990px) {
   body .product-layout .product-images {
@@ -511,4 +524,15 @@ body {
   body .body .description .row div .description-img {
     display: none; }
   body .body .description .row div .description-title {
-    font-size: 2rem; } }
+    font-size: 2rem; }
+  body .cart .cart-details .cart-product {
+    flex-wrap: wrap;
+    justify-content: center; }
+    body .cart .cart-details .cart-product p {
+      font-size: small; }
+    body .cart .cart-details .cart-product li {
+      font-size: small; }
+    body .cart .cart-details .cart-product label {
+      font-size: small; }
+    body .cart .cart-details .cart-product .cart-product-img img {
+      width: 120px; } }

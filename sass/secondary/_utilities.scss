@@ -8,6 +8,7 @@ $bg-tp : rgba(255, 255, 255, 0.5);
     font-family: vladimir;
     src: url(../fonts/VLADIMIR.TTF);
 }
+
 /* Animation mixin */
 @mixin move-up ($rem) {
     @if($rem > 0){

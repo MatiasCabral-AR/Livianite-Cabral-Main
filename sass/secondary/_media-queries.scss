@@ -26,6 +26,17 @@ body{
                 }
             }
     }
+    .cart{
+        margin: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .cart-payment{
+            position: relative;
+            width: 100%;
+        }
+    }
 }
 }
 
@@ -130,6 +141,28 @@ body{
                         }
                         .description-title{
                             font-size: 2rem;
+                        }
+                    }
+                }
+            }
+        }
+        .cart{
+            .cart-details{
+                .cart-product{
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    p{
+                        font-size: small;
+                    }
+                    li{
+                        font-size: small;
+                    }
+                    label{
+                        font-size: small;
+                    }
+                    .cart-product-img{
+                        img{
+                            width: 120px;
                         }
                     }
                 }
