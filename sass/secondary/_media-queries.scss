@@ -34,7 +34,7 @@ body{
         align-items: center;
         .cart-payment{
             position: relative;
-            width: 100%;
+            width: auto;   
         }
     }
 }
@@ -161,6 +161,7 @@ body{
                         font-size: small;
                     }
                     .cart-product-img{
+                        justify-content: center;
                         img{
                             width: 120px;
                         }

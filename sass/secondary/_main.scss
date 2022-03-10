@@ -24,12 +24,6 @@ body{
             padding-top: .5rem;
         }
     }
-
-/*     //index.html
-    .presentation-bg-img{
-        background-image: url("../../img/presentation.jpg");
-        background-size: cover;
-    }*/
     .upper-side{
         margin-top: 10rem;
         margin-bottom: 8rem;
@@ -108,9 +102,43 @@ body{
                 justify-content: center;
                 .cart-payment-buyButton-button{
                     width: 70%;
-                    border: none;
-                    border-radius: 5px;
-                    background-color: clr;
+                    @include button;
+                }
+            }
+            .cart-payment-subTotal{
+                .cart-payment-subTotal-title{
+                    @include center-highlight;
+                    text-decoration: underline;
+                }
+                .cart-payment-subTotal-price{
+                    @include center-highlight;
+                }
+            }
+            .cart-payment-shipment{
+                .cart-payment-shipment-select{
+                    display: flex;
+                    flex-direction: column;
+                    margin-bottom: 1rem;
+                    label{
+                        @include center-highlight;
+                    }
+                    select{
+                        @include input;
+                        border: 2px solid transparent;
+                        &:hover{
+                            border: 2px solid clr(livianite, dark);
+                        }
+                    }   
+                }
+                .cart-payment-shipment-cost{
+                    p{
+                        @include center-highlight;
+                    }
+                }
+            }
+            .cart-payment-total{
+                p{
+                    @include center-highlight;
                 }
             }
 
