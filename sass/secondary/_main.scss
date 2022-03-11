@@ -150,11 +150,11 @@ body{
         display: grid;
         grid-template-areas: 
         "rel img info"
-        "rel comm comm"
-        "rel comm comm"
+        "comm comm comm"
         ;
         .related-products{
             grid-area: rel;
+            position: relative;
             background-color: clr(livianite, base);
             height: 700px;
             width: fit-content;
@@ -174,7 +174,6 @@ body{
                 align-items: center;
                 flex-direction: column;
                 border: 1px solid clr(livianite, dark);
-                width: min-content;
                 &:hover p{
                     @include center-highlight;
                     border-radius: 3px;
@@ -192,13 +191,9 @@ body{
             }
         }
         .product-images{
-            margin-left: 1rem;
-            margin-right: 1rem;
-            height: max-content;
             grid-area: img;
             display: flex;
-            justify-content: flex-end;
-            flex-direction: row;
+            justify-content: space-around;
             .product-images-main{
                 display: flex;
                 justify-content: center;
@@ -213,14 +208,15 @@ body{
                 }
             }
             .product-images-other{
+                position: relative;
+                width: fit-content;
+                height: 100%;
                 display: flex;
                 flex-direction: column;
-                align-items: end;
-                height: fit-content;
+                justify-content: center;
                 img{
-                    border: 1px solid clr(livianite, dark);
-                    width: 50%;
-                    padding: .5rem;
+                    margin: .3rem;
+                    width: 180px;
                     cursor: pointer;
                 }
             }

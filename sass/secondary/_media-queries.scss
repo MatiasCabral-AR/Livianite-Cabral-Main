@@ -55,9 +55,8 @@ body{
                     margin-top: 1rem;
                     width: 100%;
                     flex-direction: row;
-                    justify-content: space-between;
                     img{
-                        width: 25%;
+                        width: 120px;
                         padding: 0;
                     }
                 }
@@ -122,6 +121,9 @@ body{
             "rel";
             .product-images{
                 border-left: none;
+                img{
+                    width: 360px;
+                }
             }
             .product-info{
                 display: flex;
