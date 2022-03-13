@@ -61,8 +61,39 @@
             <p>Detalles de Productos</p>
             <hr>
             <div class="cart-product">
+                <!-- Ejemplo de que el elemento cart-product no se rompe al ingresarle datos e imagenes -->
                 <span class="cart-product-img">
-                    <img src="../../img/producto.png" alt="Imagen de Producto">
+                    <img src="../../img/diseno1-1.jpg" alt="Imagen de Producto">
+                </span>
+                <div class="cart-product-info">
+                    <p class="cart-product-info-name">Tanga Triple Tira</p>
+                    <p class="cart-product-info-color">
+                        Color seleccionado : <br> <span class="cart-product-info-selectedColor">
+                            Negro
+                        </span>
+                    </p>
+                    <p class="cart-product-info-unitPrize">$ 980</p>
+                </div>
+                <div class="cart-product-size">
+                    <ul>
+                        <p class="cart-product-size-title">Medidas : </p>
+                        <li>Medida 1 : XXcm</li>
+                        <li class="d-none">Medida 2 : XXcm</li>
+                        <li class="d-none">Medida 3 : XXcm</li>
+                    </ul>
+                </div>
+                <div class="cart-product-quantity">
+                    <label for="cantidad" class="cart-product-quantity-title">Cantidad</label>
+                    <input type="number" id="cantidad" name="cantidad" min="1" max="10" placeholder="Cant">
+                </div>
+                <div class="cart-product-price">
+                    <p>Total Producto</p>
+                    <p class="cart-product-price-total">$ 980</p>
+                </div>
+            </div>
+            <div class="cart-product">
+                <span class="cart-product-img">
+                    <img src="../../img/lenceria1-1.jpg" alt="Imagen de Producto">
                 </span>
                 <div class="cart-product-info">
                     <p class="cart-product-info-name">Nombre del producto</p>
@@ -92,37 +123,7 @@
             </div>
             <div class="cart-product">
                 <span class="cart-product-img">
-                    <img src="../../img/producto.png" alt="Imagen de Producto">
-                </span>
-                <div class="cart-product-info">
-                    <p class="cart-product-info-name">Nombre del producto</p>
-                    <p class="cart-product-info-color">
-                        Color seleccionado : <br> <span class="cart-product-info-selectedColor">
-                            Color/Colores
-                        </span>
-                    </p>
-                    <p class="cart-product-info-unitPrize">$ XXXX</p>
-                </div>
-                <div class="cart-product-size">
-                    <ul>
-                        <p class="cart-product-size-title">Medidas : </p>
-                        <li>Medida 1 : XXcm</li>
-                        <li>Medida 2 : XXcm</li>
-                        <li>Medida 3 : XXcm</li>
-                    </ul>
-                </div>
-                <div class="cart-product-quantity">
-                    <label for="cantidad" class="cart-product-quantity-title">Cantidad</label>
-                    <input type="number" id="cantidad" name="cantidad" min="1" max="10" placeholder="Cant">
-                </div>
-                <div class="cart-product-price">
-                    <p>Total Producto</p>
-                    <p class="cart-product-price-total">$ XXXX</p>
-                </div>
-            </div>
-            <div class="cart-product">
-                <span class="cart-product-img">
-                    <img src="../../img/producto.png" alt="Imagen de Producto">
+                    <img src="../../img/lenceria2-2.jpg" alt="Imagen de Producto">
                 </span>
                 <div class="cart-product-info">
                     <p class="cart-product-info-name">Nombre del producto</p>
@@ -302,8 +303,10 @@
                 <p class="cart-payment-total-price">$ XXXX</p>
             </div>
             <hr>
-            <a href="javascript:void(0)">Metodos de Devolucion</a>
-            <a href="javascript:void(0)">Informacion Sobre Envios</a>
+            <div class="cart-payment-links">
+                <a href="javascript:void(0)">Metodos de Devolucion</a>
+                <a href="javascript:void(0)">Informacion Sobre Envios</a>
+            </div>
         </aside>
     </main>
     <div class="container-fluid" id="footer">

@@ -141,6 +141,14 @@ body{
                     @include center-highlight;
                 }
             }
+            .cart-payment-links{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                a{
+                    margin-top: .5rem;
+                }
+            }
 
         }
     }

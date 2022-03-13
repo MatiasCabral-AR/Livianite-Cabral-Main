@@ -27,7 +27,10 @@ header{
                         border: none;
                         border-radius: none;
                         background-color: clr(livianite, base);
-                    }           
+                    }
+                    .contact{
+                        cursor: pointer;
+                    }        
                 }
             }
         }
@@ -44,7 +47,7 @@ section{
     }
     .popular-products{
         margin-top: 0;
-        background-color: clr(livianite, dark);
+        background-color: clr(livianite, light);
     }
     .design-container{
         
@@ -219,7 +222,9 @@ div{
             }
         }
         .fixed-footer{
+            $f: &;
             background-color: $bg-tp;
+            transition: all .5s;
             li{
                 a{
                     &::before{
